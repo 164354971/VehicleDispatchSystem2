@@ -20,4 +20,4 @@ vds:
     description: "校园租车系统优惠券接口文档"
     email: 164354971@qq.com
     concat: 田园
-    package: love.lingbao.coupon.controller
+    package: cn.lingbaocrisps.coupon.controller

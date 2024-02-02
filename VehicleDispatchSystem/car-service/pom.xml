@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>VehicleDispatchSystem</artifactId>
-        <groupId>love.lingbao</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>cn.lingbaocrisps</groupId>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -20,15 +20,15 @@
     <dependencies>
         <!--common-->
         <dependency>
-            <groupId>love.lingbao</groupId>
+            <groupId>cn.lingbaocrisps</groupId>
             <artifactId>vds-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
         <!--api -->
         <dependency>
-            <groupId>love.lingbao</groupId>
+            <groupId>cn.lingbaocrisps</groupId>
             <artifactId>vds-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
         <!--web-->
         <dependency>
@@ -80,4 +80,14 @@
             <artifactId>jackson-datatype-jsr310</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

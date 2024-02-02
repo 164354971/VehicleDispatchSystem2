@@ -13,5 +13,14 @@ vds:
     tokenTTL: 30m
   auth:
     excludePaths:
+      - /register/**
       - /register
+      - /login/**
       - /login
+      - /brands/**
+      - /models/**
+      - /cars/**
+      - /evaluates/**
+    includePaths:
+      - /users/**
+      - /evaluate/reply

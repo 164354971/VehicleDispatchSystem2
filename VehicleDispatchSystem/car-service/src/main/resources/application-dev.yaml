@@ -20,4 +20,4 @@ vds:
     description: "校园租车系统用户车辆接口文档"
     email: 164354971@qq.com
     concat: 田园
-    package: love.lingbao.car.controller
+    package: cn.lingbaocrisps.car.controller

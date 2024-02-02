@@ -1,4 +1,4 @@
-18:10:52:409  INFO 9416 --- [main] love.lingbao.car.TestSerializer          : The following 1 profile is active: "dev"
+18:10:52:409  INFO 9416 --- [main] cn.lingbaocrisps.car.TestSerializer          : The following 1 profile is active: "dev"
 18:10:53:223  INFO 9416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 18:10:53:228  INFO 9416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 18:10:53:264  INFO 9416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
@@ -66,7 +66,7 @@
 18:11:00:976  INFO 9416 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
 18:11:00:981  INFO 9416 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 18:11:01:001  INFO 9416 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-18:11:01:171  INFO 9416 --- [main] love.lingbao.car.TestSerializer          : Started TestSerializer in 12.084 seconds (JVM running for 13.237)
+18:11:01:171  INFO 9416 --- [main] cn.lingbaocrisps.car.TestSerializer          : Started TestSerializer in 12.084 seconds (JVM running for 13.237)
 18:11:01:177  INFO 9416 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service-dev.yaml, group=DEFAULT_GROUP
 18:11:01:178  INFO 9416 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service, group=DEFAULT_GROUP
 18:11:01:178  INFO 9416 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service.yaml, group=DEFAULT_GROUP
@@ -95,7 +95,7 @@
 18:11:02:362  INFO 9416 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xeccaf6da, L:/192.168.49.1:58102 ! R:/192.168.49.128:8099]
 18:11:02:362  INFO 9416 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xeccaf6da, L:/192.168.49.1:58102 ! R:/192.168.49.128:8099]) will closed
 18:11:02:362  INFO 9416 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xeccaf6da, L:/192.168.49.1:58102 ! R:/192.168.49.128:8099]) will closed
-18:13:31:773  INFO 90828 --- [main] love.lingbao.car.TestSerializer          : The following 1 profile is active: "dev"
+18:13:31:773  INFO 90828 --- [main] cn.lingbaocrisps.car.TestSerializer          : The following 1 profile is active: "dev"
 18:13:32:599  INFO 90828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 18:13:32:603  INFO 90828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 18:13:32:624  INFO 90828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
@@ -163,7 +163,7 @@
 18:13:40:249  INFO 90828 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
 18:13:40:255  INFO 90828 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 18:13:40:276  INFO 90828 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-18:13:40:487  INFO 90828 --- [main] love.lingbao.car.TestSerializer          : Started TestSerializer in 12.414 seconds (JVM running for 14.416)
+18:13:40:487  INFO 90828 --- [main] cn.lingbaocrisps.car.TestSerializer          : Started TestSerializer in 12.414 seconds (JVM running for 14.416)
 18:13:40:498  INFO 90828 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service-dev.yaml, group=DEFAULT_GROUP
 18:13:40:499  INFO 90828 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service, group=DEFAULT_GROUP
 18:13:40:499  INFO 90828 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service.yaml, group=DEFAULT_GROUP
@@ -192,7 +192,7 @@
 18:13:41:639  INFO 90828 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xb131e8a5, L:/192.168.49.1:58396 ! R:/192.168.49.128:8099]
 18:13:41:639  INFO 90828 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xb131e8a5, L:/192.168.49.1:58396 ! R:/192.168.49.128:8099]) will closed
 18:13:41:639  INFO 90828 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xb131e8a5, L:/192.168.49.1:58396 ! R:/192.168.49.128:8099]) will closed
-18:17:58:483  INFO 23984 --- [main] love.lingbao.car.TestSerializer          : The following 1 profile is active: "dev"
+18:17:58:483  INFO 23984 --- [main] cn.lingbaocrisps.car.TestSerializer          : The following 1 profile is active: "dev"
 18:17:59:341  INFO 23984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 18:17:59:344  INFO 23984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 18:17:59:370  INFO 23984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
@@ -260,7 +260,7 @@
 18:18:08:356  INFO 23984 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
 18:18:08:362  INFO 23984 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 18:18:08:414  INFO 23984 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-18:18:08:637  INFO 23984 --- [main] love.lingbao.car.TestSerializer          : Started TestSerializer in 14.257 seconds (JVM running for 15.898)
+18:18:08:637  INFO 23984 --- [main] cn.lingbaocrisps.car.TestSerializer          : Started TestSerializer in 14.257 seconds (JVM running for 15.898)
 18:18:08:658  INFO 23984 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service-dev.yaml, group=DEFAULT_GROUP
 18:18:08:660  INFO 23984 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service, group=DEFAULT_GROUP
 18:18:08:661  INFO 23984 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service.yaml, group=DEFAULT_GROUP
@@ -289,7 +289,7 @@
 18:18:10:261  INFO 23984 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x36378b0d, L:/192.168.49.1:49988 ! R:/192.168.49.128:8099]
 18:18:10:261  INFO 23984 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x36378b0d, L:/192.168.49.1:49988 ! R:/192.168.49.128:8099]) will closed
 18:18:10:261  INFO 23984 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x36378b0d, L:/192.168.49.1:49988 ! R:/192.168.49.128:8099]) will closed
-18:18:46:343  INFO 27956 --- [main] love.lingbao.car.TestSerializer          : The following 1 profile is active: "dev"
+18:18:46:343  INFO 27956 --- [main] cn.lingbaocrisps.car.TestSerializer          : The following 1 profile is active: "dev"
 18:18:47:232  INFO 27956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 18:18:47:235  INFO 27956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 18:18:47:258  INFO 27956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
@@ -357,7 +357,7 @@
 18:18:55:442  INFO 27956 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
 18:18:55:446  INFO 27956 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 18:18:55:471  INFO 27956 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-18:18:55:605  INFO 27956 --- [main] love.lingbao.car.TestSerializer          : Started TestSerializer in 12.655 seconds (JVM running for 13.809)
+18:18:55:605  INFO 27956 --- [main] cn.lingbaocrisps.car.TestSerializer          : Started TestSerializer in 12.655 seconds (JVM running for 13.809)
 18:18:55:614  INFO 27956 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service-dev.yaml, group=DEFAULT_GROUP
 18:18:55:614  INFO 27956 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service, group=DEFAULT_GROUP
 18:18:55:615  INFO 27956 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service.yaml, group=DEFAULT_GROUP
@@ -455,7 +455,7 @@
 18:19:36:157  INFO 27956 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@5a50e7ca[Running, pool size = 14, active threads = 0, queued tasks = 0, completed tasks = 19]
 18:19:36:165  INFO 27956 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 18:19:36:197  INFO 27956 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-18:20:49:946  INFO 74788 --- [main] love.lingbao.car.TestSerializer          : The following 1 profile is active: "dev"
+18:20:49:946  INFO 74788 --- [main] cn.lingbaocrisps.car.TestSerializer          : The following 1 profile is active: "dev"
 18:20:50:787  INFO 74788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 18:20:50:791  INFO 74788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 18:20:50:816  INFO 74788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
@@ -523,7 +523,7 @@
 18:20:58:876  INFO 74788 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
 18:20:58:882  INFO 74788 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 18:20:58:906  INFO 74788 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-18:20:59:039  INFO 74788 --- [main] love.lingbao.car.TestSerializer          : Started TestSerializer in 12.413 seconds (JVM running for 13.603)
+18:20:59:039  INFO 74788 --- [main] cn.lingbaocrisps.car.TestSerializer          : Started TestSerializer in 12.413 seconds (JVM running for 13.603)
 18:20:59:048  INFO 74788 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service-dev.yaml, group=DEFAULT_GROUP
 18:20:59:049  INFO 74788 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service, group=DEFAULT_GROUP
 18:20:59:050  INFO 74788 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service.yaml, group=DEFAULT_GROUP
@@ -712,7 +712,7 @@ java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 857 millis
 18:22:53:158  INFO 74788 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xabf6d433, L:/192.168.49.1:50325 ! R:/192.168.49.128:8099]
 18:22:53:158  INFO 74788 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xabf6d433, L:/192.168.49.1:50325 ! R:/192.168.49.128:8099]) will closed
 18:22:53:158  INFO 74788 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xabf6d433, L:/192.168.49.1:50325 ! R:/192.168.49.128:8099]) will closed
-18:23:14:307  INFO 7832 --- [main] love.lingbao.car.TestSerializer          : The following 1 profile is active: "dev"
+18:23:14:307  INFO 7832 --- [main] cn.lingbaocrisps.car.TestSerializer          : The following 1 profile is active: "dev"
 18:23:15:498  INFO 7832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 18:23:15:502  INFO 7832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 18:23:15:538  INFO 7832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
@@ -780,7 +780,7 @@ java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 857 millis
 18:23:26:092  INFO 7832 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
 18:23:26:097  INFO 7832 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 18:23:26:129  INFO 7832 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-18:23:26:361  INFO 7832 --- [main] love.lingbao.car.TestSerializer          : Started TestSerializer in 15.578 seconds (JVM running for 16.77)
+18:23:26:361  INFO 7832 --- [main] cn.lingbaocrisps.car.TestSerializer          : Started TestSerializer in 15.578 seconds (JVM running for 16.77)
 18:23:26:373  INFO 7832 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service-dev.yaml, group=DEFAULT_GROUP
 18:23:26:375  INFO 7832 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service, group=DEFAULT_GROUP
 18:23:26:375  INFO 7832 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service.yaml, group=DEFAULT_GROUP
@@ -825,7 +825,7 @@ java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 857 millis
 18:23:42:991  INFO 7832 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@213383c4[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 12]
 18:23:42:995  INFO 7832 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 18:23:43:009  INFO 7832 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-18:23:53:022  INFO 69324 --- [main] love.lingbao.car.TestSerializer          : The following 1 profile is active: "dev"
+18:23:53:022  INFO 69324 --- [main] cn.lingbaocrisps.car.TestSerializer          : The following 1 profile is active: "dev"
 18:23:53:901  INFO 69324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 18:23:53:905  INFO 69324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 18:23:53:930  INFO 69324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
@@ -893,7 +893,7 @@ java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 857 millis
 18:24:01:604  INFO 69324 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
 18:24:01:611  INFO 69324 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 18:24:01:635  INFO 69324 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-18:24:01:803  INFO 69324 --- [main] love.lingbao.car.TestSerializer          : Started TestSerializer in 12.795 seconds (JVM running for 14.089)
+18:24:01:803  INFO 69324 --- [main] cn.lingbaocrisps.car.TestSerializer          : Started TestSerializer in 12.795 seconds (JVM running for 14.089)
 18:24:01:815  INFO 69324 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service-dev.yaml, group=DEFAULT_GROUP
 18:24:01:816  INFO 69324 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service, group=DEFAULT_GROUP
 18:24:01:817  INFO 69324 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service.yaml, group=DEFAULT_GROUP
@@ -1028,7 +1028,7 @@ java.io.IOException: 你的主机中的软件中止了一个已建立的连接�
 18:25:00:123  INFO 69324 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x3a0183b6, L:/192.168.49.1:58487 ! R:/192.168.49.128:8099]
 18:25:00:123  INFO 69324 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x3a0183b6, L:/192.168.49.1:58487 ! R:/192.168.49.128:8099]) will closed
 18:25:00:124  INFO 69324 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x3a0183b6, L:/192.168.49.1:58487 ! R:/192.168.49.128:8099]) will closed
-18:33:53:267  INFO 26632 --- [main] love.lingbao.car.TestSerializer          : The following 1 profile is active: "dev"
+18:33:53:267  INFO 26632 --- [main] cn.lingbaocrisps.car.TestSerializer          : The following 1 profile is active: "dev"
 18:33:54:173  INFO 26632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 18:33:54:176  INFO 26632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 18:33:54:210  INFO 26632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
@@ -1096,7 +1096,7 @@ java.io.IOException: 你的主机中的软件中止了一个已建立的连接�
 18:34:01:516  INFO 26632 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
 18:34:01:520  INFO 26632 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 18:34:01:552  INFO 26632 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-18:34:01:771  INFO 26632 --- [main] love.lingbao.car.TestSerializer          : Started TestSerializer in 12.342 seconds (JVM running for 14.204)
+18:34:01:771  INFO 26632 --- [main] cn.lingbaocrisps.car.TestSerializer          : Started TestSerializer in 12.342 seconds (JVM running for 14.204)
 18:34:01:786  INFO 26632 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service-dev.yaml, group=DEFAULT_GROUP
 18:34:01:790  INFO 26632 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service, group=DEFAULT_GROUP
 18:34:01:790  INFO 26632 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service.yaml, group=DEFAULT_GROUP
@@ -1125,7 +1125,7 @@ java.io.IOException: 你的主机中的软件中止了一个已建立的连接�
 18:34:02:963  INFO 26632 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xbbf406ff, L:/192.168.49.1:54456 ! R:/192.168.49.128:8099]
 18:34:02:963  INFO 26632 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xbbf406ff, L:/192.168.49.1:54456 ! R:/192.168.49.128:8099]) will closed
 18:34:02:963  INFO 26632 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xbbf406ff, L:/192.168.49.1:54456 ! R:/192.168.49.128:8099]) will closed
-18:34:51:251  INFO 84912 --- [main] love.lingbao.car.TestSerializer          : The following 1 profile is active: "dev"
+18:34:51:251  INFO 84912 --- [main] cn.lingbaocrisps.car.TestSerializer          : The following 1 profile is active: "dev"
 18:34:52:034  INFO 84912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 18:34:52:036  INFO 84912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 18:34:52:060  INFO 84912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
@@ -1193,7 +1193,7 @@ java.io.IOException: 你的主机中的软件中止了一个已建立的连接�
 18:34:59:383  INFO 84912 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
 18:34:59:391  INFO 84912 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 18:34:59:413  INFO 84912 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-18:34:59:588  INFO 84912 --- [main] love.lingbao.car.TestSerializer          : Started TestSerializer in 11.541 seconds (JVM running for 12.67)
+18:34:59:588  INFO 84912 --- [main] cn.lingbaocrisps.car.TestSerializer          : Started TestSerializer in 11.541 seconds (JVM running for 12.67)
 18:34:59:599  INFO 84912 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service-dev.yaml, group=DEFAULT_GROUP
 18:34:59:600  INFO 84912 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service, group=DEFAULT_GROUP
 18:34:59:601  INFO 84912 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service.yaml, group=DEFAULT_GROUP
@@ -1222,10 +1222,10 @@ java.io.IOException: 你的主机中的软件中止了一个已建立的连接�
 18:35:00:838  INFO 84912 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xf4c41ffd, L:/192.168.49.1:51009 ! R:/192.168.49.128:8099]
 18:35:00:838  INFO 84912 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xf4c41ffd, L:/192.168.49.1:51009 ! R:/192.168.49.128:8099]) will closed
 18:35:00:838  INFO 84912 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xf4c41ffd, L:/192.168.49.1:51009 ! R:/192.168.49.128:8099]) will closed
-18:39:24:147  INFO 71304 --- [main] love.lingbao.car.TestSerializer          : The following 1 profile is active: "dev"
+18:39:24:147  INFO 71304 --- [main] cn.lingbaocrisps.car.TestSerializer          : The following 1 profile is active: "dev"
 18:39:25:202 ERROR 71304 --- [main] o.s.boot.SpringApplication               : Application run failed
 
-java.lang.IllegalStateException: Error processing condition on love.lingbao.common.config.MyBatisConfig.mybatisPlusInterceptor
+java.lang.IllegalStateException: Error processing condition on config.cn.lingbaocrisps.common.MyBatisConfig.mybatisPlusInterceptor
 	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.7.12.jar:2.7.12]
 	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.27.jar:5.3.27]
 	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.27.jar:5.3.27]
@@ -1314,7 +1314,7 @@ java.lang.IllegalStateException: Error processing condition on love.lingbao.comm
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:na]
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) ~[junit-rt.jar:na]
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [love.lingbao.common.config.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1f89ab83]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [config.cn.lingbaocrisps.common.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1f89ab83]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.27.jar:5.3.27]
@@ -1347,7 +1347,7 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.co
 
 18:39:25:210  WARN 71304 --- [main] o.s.boot.SpringApplication               : Unable to close ApplicationContext
 
-java.lang.IllegalStateException: Failed to introspect Class [love.lingbao.common.config.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1f89ab83]
+java.lang.IllegalStateException: Failed to introspect Class [config.cn.lingbaocrisps.common.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1f89ab83]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.27.jar:5.3.27]
@@ -1453,7 +1453,7 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.co
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527) ~[na:na]
 	... 96 common frames omitted
 
-18:39:25:222 ERROR 71304 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@502f1f4c] to prepare test instance [love.lingbao.car.TestSerializer@2cadcff6]
+18:39:25:222 ERROR 71304 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@502f1f4c] to prepare test instance [cn.lingbaocrisps.car.TestSerializer@2cadcff6]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.27.jar:5.3.27]
@@ -1528,7 +1528,7 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:na]
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) ~[junit-rt.jar:na]
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
-Caused by: java.lang.IllegalStateException: Error processing condition on love.lingbao.common.config.MyBatisConfig.mybatisPlusInterceptor
+Caused by: java.lang.IllegalStateException: Error processing condition on config.cn.lingbaocrisps.common.MyBatisConfig.mybatisPlusInterceptor
 	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.7.12.jar:2.7.12]
 	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.27.jar:5.3.27]
 	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.27.jar:5.3.27]
@@ -1547,7 +1547,7 @@ Caused by: java.lang.IllegalStateException: Error processing condition on love.l
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.27.jar:5.3.27]
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.27.jar:5.3.27]
 	... 71 common frames omitted
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [love.lingbao.common.config.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1f89ab83]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [config.cn.lingbaocrisps.common.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1f89ab83]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.27.jar:5.3.27]
@@ -1581,10 +1581,10 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.co
 18:39:25:246  WARN 71304 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
 18:39:25:246  WARN 71304 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
 18:39:25:248  WARN 71304 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-18:43:53:369  INFO 72748 --- [main] love.lingbao.car.TestSerializer          : The following 1 profile is active: "dev"
+18:43:53:369  INFO 72748 --- [main] cn.lingbaocrisps.car.TestSerializer          : The following 1 profile is active: "dev"
 18:43:54:140 ERROR 72748 --- [main] o.s.boot.SpringApplication               : Application run failed
 
-java.lang.IllegalStateException: Error processing condition on love.lingbao.common.config.MyBatisConfig.mybatisPlusInterceptor
+java.lang.IllegalStateException: Error processing condition on config.cn.lingbaocrisps.common.MyBatisConfig.mybatisPlusInterceptor
 	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.7.12.jar:2.7.12]
 	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.27.jar:5.3.27]
 	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.27.jar:5.3.27]
@@ -1673,7 +1673,7 @@ java.lang.IllegalStateException: Error processing condition on love.lingbao.comm
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:na]
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) ~[junit-rt.jar:na]
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [love.lingbao.common.config.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1f89ab83]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [config.cn.lingbaocrisps.common.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1f89ab83]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.27.jar:5.3.27]
@@ -1706,7 +1706,7 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.co
 
 18:43:54:144  WARN 72748 --- [main] o.s.boot.SpringApplication               : Unable to close ApplicationContext
 
-java.lang.IllegalStateException: Failed to introspect Class [love.lingbao.common.config.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1f89ab83]
+java.lang.IllegalStateException: Failed to introspect Class [config.cn.lingbaocrisps.common.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1f89ab83]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.27.jar:5.3.27]
@@ -1812,7 +1812,7 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.co
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527) ~[na:na]
 	... 96 common frames omitted
 
-18:43:54:146 ERROR 72748 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@a8e6492] to prepare test instance [love.lingbao.car.TestSerializer@6475e778]
+18:43:54:146 ERROR 72748 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@a8e6492] to prepare test instance [cn.lingbaocrisps.car.TestSerializer@6475e778]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.27.jar:5.3.27]
@@ -1887,7 +1887,7 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:na]
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) ~[junit-rt.jar:na]
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
-Caused by: java.lang.IllegalStateException: Error processing condition on love.lingbao.common.config.MyBatisConfig.mybatisPlusInterceptor
+Caused by: java.lang.IllegalStateException: Error processing condition on config.cn.lingbaocrisps.common.MyBatisConfig.mybatisPlusInterceptor
 	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.7.12.jar:2.7.12]
 	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.27.jar:5.3.27]
 	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.27.jar:5.3.27]
@@ -1906,7 +1906,7 @@ Caused by: java.lang.IllegalStateException: Error processing condition on love.l
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.27.jar:5.3.27]
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.27.jar:5.3.27]
 	... 71 common frames omitted
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [love.lingbao.common.config.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1f89ab83]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [config.cn.lingbaocrisps.common.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1f89ab83]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.27.jar:5.3.27]
 	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.27.jar:5.3.27]
@@ -1940,7 +1940,7 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.co
 18:43:54:170  WARN 72748 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
 18:43:54:170  WARN 72748 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
 18:43:54:171  WARN 72748 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-18:51:50:096  INFO 90868 --- [main] love.lingbao.car.TestSerializer          : The following 1 profile is active: "dev"
+18:51:50:096  INFO 90868 --- [main] cn.lingbaocrisps.car.TestSerializer          : The following 1 profile is active: "dev"
 18:51:51:061  INFO 90868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 18:51:51:064  INFO 90868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 18:51:51:092  INFO 90868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
@@ -2008,7 +2008,7 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.co
 18:51:58:897  INFO 90868 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
 18:51:58:902  INFO 90868 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 18:51:58:953  INFO 90868 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-18:51:59:096  INFO 90868 --- [main] love.lingbao.car.TestSerializer          : Started TestSerializer in 12.266 seconds (JVM running for 13.468)
+18:51:59:096  INFO 90868 --- [main] cn.lingbaocrisps.car.TestSerializer          : Started TestSerializer in 12.266 seconds (JVM running for 13.468)
 18:51:59:107  INFO 90868 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service-dev.yaml, group=DEFAULT_GROUP
 18:51:59:108  INFO 90868 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service, group=DEFAULT_GROUP
 18:51:59:108  INFO 90868 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service.yaml, group=DEFAULT_GROUP
@@ -2037,7 +2037,7 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.co
 18:52:00:276  INFO 90868 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x696dcf18, L:/192.168.49.1:59609 ! R:/192.168.49.128:8099]
 18:52:00:276  INFO 90868 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x696dcf18, L:/192.168.49.1:59609 ! R:/192.168.49.128:8099]) will closed
 18:52:00:278  INFO 90868 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x696dcf18, L:/192.168.49.1:59609 ! R:/192.168.49.128:8099]) will closed
-19:50:32:224  INFO 73892 --- [main] love.lingbao.car.DisableTimeSqlTest      : The following 1 profile is active: "dev"
+19:50:32:224  INFO 73892 --- [main] cn.lingbaocrisps.car.DisableTimeSqlTest      : The following 1 profile is active: "dev"
 19:50:33:236  INFO 73892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 19:50:33:240  INFO 73892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 19:50:33:271  INFO 73892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
@@ -2105,7 +2105,7 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.co
 19:50:42:302  INFO 73892 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
 19:50:42:308  INFO 73892 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 19:50:42:341  INFO 73892 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-19:50:42:508  INFO 73892 --- [main] love.lingbao.car.DisableTimeSqlTest      : Started DisableTimeSqlTest in 15.063 seconds (JVM running for 16.707)
+19:50:42:508  INFO 73892 --- [main] cn.lingbaocrisps.car.DisableTimeSqlTest      : Started DisableTimeSqlTest in 15.063 seconds (JVM running for 16.707)
 19:50:42:515  INFO 73892 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service-dev.yaml, group=DEFAULT_GROUP
 19:50:42:517  INFO 73892 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service, group=DEFAULT_GROUP
 19:50:42:519  INFO 73892 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=vds-car-service.yaml, group=DEFAULT_GROUP
