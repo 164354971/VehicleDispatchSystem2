@@ -1,14 +1,21 @@
 package cn.lingbaocrisps.user.controller;
 
+import cn.lingbaocrisps.common.utils.BeanUtils;
 import cn.lingbaocrisps.common.utils.UserContext;
+import cn.lingbaocrisps.user.domain.bo.UserBO;
 import cn.lingbaocrisps.user.domain.dto.UserDTO;
 import cn.lingbaocrisps.user.domain.po.User;
+import cn.lingbaocrisps.user.domain.vo.OtherVO;
+import cn.lingbaocrisps.user.domain.vo.UserVO;
 import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import cn.lingbaocrisps.common.domain.R;
 import cn.lingbaocrisps.user.service.IUserService;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Api(tags = "用户相关接口")
 @RestController
@@ -56,4 +63,22 @@ public class UserController {
         log.info("/users/userLogin get -> isUserLogin; 用户是否已登录");
         return R.ok();
     }
+
+    @GetMapping("/bo/{id}")
+    public UserBO getUserBO(@PathVariable Integer id){
+        log.info("/users/bo/{id} get -> getUserBO: id = {}; 转换用户BO对象", id);
+        User user = userService.getUser(id);
+        UserBO userBO = BeanUtils.copyBean(user, UserBO.class);
+        userBO.setUserImg(user.getImg());
+        return userBO;
+    }
+
+    @GetMapping("/list/other")
+    public R<List<OtherVO>> getChatUserList(@RequestParam("str") String str){
+        log.info("/users/list get -> getChatUserList: str = {}; 获取聊天用户列表", str);
+        if(str == null || str.equals(""))
+            return R.ok(new ArrayList<>());
+        return R.ok(BeanUtils.copyList(userService.getChatUserList(str), OtherVO.class));
+    }
+
 }

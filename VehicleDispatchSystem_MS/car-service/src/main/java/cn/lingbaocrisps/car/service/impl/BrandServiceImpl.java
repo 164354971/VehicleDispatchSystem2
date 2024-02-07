@@ -4,6 +4,7 @@ import cn.lingbaocrisps.car.domain.po.Brand;
 import cn.lingbaocrisps.car.domain.vo.BrandVO;
 import cn.lingbaocrisps.car.mapper.BrandMapper;
 import cn.lingbaocrisps.car.service.IBrandService;
+import cn.lingbaocrisps.common.utils.RedisTools;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.RequiredArgsConstructor;
@@ -21,15 +22,12 @@ import java.util.concurrent.TimeUnit;
 @RequiredArgsConstructor
 public class BrandServiceImpl extends ServiceImpl<BrandMapper, Brand> implements IBrandService {
 
-    private final RedisTemplate<String, ? extends Object> redisTemplate;
-
-    private final StringRedisTemplate stringRedisTemplate;
+    private final RedisTools redisTools;
 
     @Override
     public List<BrandVO> findBrandVOList(String str) {
         //1.先去redis里查询 BRAND_VO_LIST_KEY 列表
-        ListOperations<String, BrandVO> brandVOListOperations = (ListOperations<String, BrandVO>) redisTemplate.opsForList();
-        List<BrandVO> brandVOList = brandVOListOperations.range(RedisConstants.BRAND_VO_LIST_KEY + str, 0, -1);
+        List<BrandVO> brandVOList = redisTools.range(RedisConstants.BRAND_VO_LIST_KEY + str, 0, -1);
         //2.如果redis中没有查到 BRAND_VO_LIST_KEY 数据则去数据库查
         if(brandVOList == null || brandVOList.size() == 0){
             LambdaQueryWrapper<Brand> lqw = new LambdaQueryWrapper<>();
@@ -64,8 +62,11 @@ public class BrandServiceImpl extends ServiceImpl<BrandMapper, Brand> implements
                 if(StringUtils.isEmpty(str)){
                     str = "";
                 }
-                brandVOListOperations.rightPushAll(RedisConstants.BRAND_VO_LIST_KEY + str, brandVOList);
-                redisTemplate.expire(RedisConstants.BRAND_VO_LIST_KEY + str, 7L, TimeUnit.DAYS);
+                synchronized (this) {
+                    redisTools.delete(RedisConstants.BRAND_VO_LIST_KEY + str);
+                    redisTools.rightPushAll(RedisConstants.BRAND_VO_LIST_KEY + str, brandVOList);
+                    redisTools.expire(RedisConstants.BRAND_VO_LIST_KEY + str, 7L, TimeUnit.DAYS);
+                }
             }
         }
 

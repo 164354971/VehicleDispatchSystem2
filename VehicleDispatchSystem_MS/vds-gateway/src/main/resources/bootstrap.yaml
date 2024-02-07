@@ -3,7 +3,8 @@ spring:
     name: vds-gateway
   cloud:
     nacos:
-      server-addr: 8.130.27.16:8848
+      #server-addr: 8.130.27.16:8848
+      server-addr: 192.168.49.128:8848
     gateway:
       routes:
         - id: vds-user-service
@@ -17,7 +18,7 @@ spring:
         - id: vds-car-service
           uri: lb://vds-car-service
           predicates:
-            - Path=/brands/**,/models/**,/cars/**
+            - Path=/brands/**,/models/**,/cars/**,/parkades/**
         - id: vds-pay-service
           uri: lb://vds-pay-service
           predicates:
@@ -30,3 +31,7 @@ spring:
           uri: lb://vds-evaluate-service
           predicates:
             - Path=/evaluates/**
+        - id: vds-websocket-service
+          uri: lb://vds-websocket-service
+          predicates:
+            - Path=/messages/**

@@ -1,0 +1,278 @@
+
+.select-parkade{
+	padding: 20rpx 30rpx;
+	background-color: #f9f9f9;
+}
+.select-parkade>image{
+	width: 200rpx;
+	height: 150rpx;
+	margin: 0 40rpx 0 0;
+	display: inline-block;
+	object-fit: cover;
+	vertical-align: top;
+}
+.select-parkade>view{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 26rpx;
+}
+.select-parkade-click{
+	height: 40rpx;
+	text-align: center;
+}
+.select-parkade-click>image{
+	display: inline-block;
+	margin-top: 10rpx;
+	width: 40rpx;
+	height: 40rpx;
+}
+.option-parkade{
+	position: absolute;
+	margin: 0 30rpx;
+	width: 660rpx;
+	top: 560rpx;
+	z-index: 20;
+}
+.on-reach-bottom {
+	margin-top: 50rpx;
+	padding: 10rpx;
+	width: 100%;
+	font-size: 24rpx;
+	background-color: #e4ecff;
+	color: #b2b2b2;
+	text-align: center;
+}
+.content {
+	
+	background-color: #e0e6f6;
+	padding: 40rpx 15rpx;
+}
+.card-info {
+	position: relative;
+	width: 660rpx;
+	margin-bottom: 20rpx;
+	padding: 30rpx;
+	background-color: #ffffff;
+	border-radius: 40rpx;
+	z-index: 2;
+}
+.card-info .card-info-nav {
+	height: 60rpx;
+	margin-bottom: 40rpx;
+	text-align: center;
+}
+.card-info .card-info-nav .title {
+	vertical-align: top;
+}
+.card-info .card-info-nav .choose {
+	vertical-align: top;
+	font-size: 24rpx;
+	color: #FFFFFF;
+	border-radius: 30rpx;
+}
+.card-info .card-info-nav .choose ._span {
+	background-color: #dedede;
+	padding: 10rpx 20rpx;
+}
+.card-info .card-info-nav .choose ._span:first-child {
+	border-radius: 30rpx 0 0 30rpx;
+}
+.card-info .card-info-nav .choose ._span:last-child {
+	border-radius: 0 30rpx 30rpx 0;
+}
+.card-info .card-info-time {
+	margin-bottom: 40rpx;
+}
+.card-info .card-info-time .start-time {
+	position: absolute;
+}
+.specific-time {
+	font-size: 26rpx;
+	margin-top: 6rpx;
+	margin-bottom: 10rpx;
+	color: #787878;
+}
+.specific-time ._span:first-child {
+	margin-right: 6rpx;
+}
+.day-time ._span {
+	font-size: 26rpx;
+	color: #787878;
+}
+.about-time {
+	font-weight: 530;
+}
+.about-time ._span {
+	font-weight: 550;
+}
+.card-info .card-info-time .day-time {
+	position: absolute;
+	width: 200rpx;
+	height: 26rpx;
+	left: 260rpx;
+	text-align: center;
+}
+.card-info .card-info-time .day-time image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.card-info .card-info-time .end-time {
+	position: absolute;
+	right: 30rpx;
+}
+.card-list {
+	background-color: #fff;
+	border-radius: 30rpx;
+	padding: 20rpx 0rpx;
+	width: 720rpx;
+}
+.card-list .options {
+	width: 100%;
+	height: 70rpx;
+	border-bottom: #e8e8e8 2rpx solid;
+}
+.card-list .options .option {
+	width: 345rpx;
+	display: inline-block;
+	text-align: center;
+}
+.card-list .options .option ._span {
+	font-size: 30rpx;
+	margin-right: 16rpx;
+}
+.card-list .options .option image {
+	width: 30rpx;
+	height: 30rpx;
+	display: inline-block;
+}
+.card-list .card-item {
+	width: 686rpx;
+	padding: 16rpx 0;
+	margin: 20rpx;
+	background-image: linear-gradient(#eaeef6, #fafafa);
+	border-radius: 10rpx 60rpx 0 30rpx;
+}
+.card-list .card-item .show {
+	width: 240rpx;
+	height: 135rpx;
+	display: inline-block;
+	object-fit: cover;
+	vertical-align: middle;
+	padding: 0 20rpx;
+}
+.text {
+	width: 340rpx;
+	display: inline-block;
+	vertical-align: middle;
+}
+.text .title {
+	white-space: nowrap;
+	width: 340rpx;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-weight: 600;
+	font-size: 32rpx;
+	margin-bottom: 10rpx;
+}
+.text .type {
+	white-space: nowrap;
+	width: 340rpx;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-weight: 500;
+	font-size: 22rpx;
+	display: inline-block;
+}
+.card-list .card-item .bottom {
+	width: 686rpx;
+	overflow: hidden;
+}
+.card-list .card-item .bottom .bottom-label {
+	font-size: 16rpx;
+}
+.card-list .card-item .bottom .bottom-label .label {
+	border-radius: 10rpx;
+	display: inline-block;
+
+	margin: 16rpx 6rpx;
+	padding: 3rpx;
+}
+.card-list .card-item .bottom .bottom-label .label image {
+	width: 34rpx;
+	height: 34rpx;
+	display: inline-block;
+	margin-right: 2rpx;
+
+	vertical-align: middle;
+}
+.card-list .card-item .bottom .bottom-label .label ._span {
+	vertical-align: middle;
+}
+.vip {
+	background-color: #60a2f9;
+	color: #ffffff;
+	font-size: 16rpx;
+	font-weight: 400;
+}
+.car-blue {
+	background-color: #6bb8ff;
+	color: #ffffff;
+	font-size: 16rpx;
+	font-weight: 400;
+}
+.car-green {
+	background-color: #7ce23d;
+	color: #ffffff;
+	font-size: 16rpx;
+	font-weight: 400;
+}
+.car-luxury {
+	background-color: #ff4727;
+	color: #ffffd4;
+	font-size: 16rpx;
+	font-weight: 400;
+}
+.price {
+	background-color: #fff6dd;
+	color: #ff6769;
+	font-size: 24rpx;
+	font-weight: 700;
+}
+.option-sort,
+.option-select {
+	position: absolute;
+	top: 664rpx;
+	width: 720rpx;
+	padding: 10rpx 0;
+	z-index: 10;
+	background-color: #fff;
+	border: #ececec 1px solid;
+	border-radius: 0 0 10rpx 10rpx;
+	opacity: 0.96;
+}
+.option-sort ._span,
+.option-select ._span {
+	display: inline-block;
+	height: 60rpx;
+	line-height: 60rpx;
+	text-align: center;
+}
+.option-sort ._span{
+	width: 360rpx;
+	font-size: 26rpx;
+}
+.option-select>view>._span{
+	width: 240rpx;
+	font-size: 26rpx;
+}
+.option-select>view>view{
+	text-align: center;
+	font-size: 22rpx;
+	color: #9dc4ff;
+}
+.check {
+	background-color: #fafafa;
+	color: #60a2f9;
+}
+

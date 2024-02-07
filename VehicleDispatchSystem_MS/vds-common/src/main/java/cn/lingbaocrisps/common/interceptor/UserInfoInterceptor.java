@@ -15,7 +15,7 @@ public class UserInfoInterceptor implements HandlerInterceptor {
         String userInfo = request.getHeader("user-info");
         //2.判断是否为空，不为空的话，存入UserContext
         if (StrUtil.isNotBlank(userInfo)) {
-            System.out.println(userInfo);
+            //System.out.println(userInfo);
             UserContext.setUser(Integer.valueOf(userInfo));
         }
         //3.放行

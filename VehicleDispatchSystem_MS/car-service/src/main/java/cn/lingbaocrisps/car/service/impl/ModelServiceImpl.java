@@ -33,8 +33,11 @@ public class ModelServiceImpl extends ServiceImpl<ModelMapper, Model> implements
         if(modelList == null || modelList.size() == 0){
             modelList = list(new LambdaQueryWrapper<Model>().eq(Model::getBrandId, brandId));
             if(modelList.size() != 0){
-                redisTools.rightPushAll(RedisConstants.MODEL_LIST_KEY + brandId, modelList);
-                redisTools.expire(RedisConstants.MODEL_LIST_KEY + brandId, 7L, TimeUnit.DAYS);
+                synchronized (this){
+                    redisTools.delete(RedisConstants.MODEL_LIST_KEY + brandId);
+                    redisTools.rightPushAll(RedisConstants.MODEL_LIST_KEY + brandId, modelList);
+                    redisTools.expire(RedisConstants.MODEL_LIST_KEY + brandId, 7L, TimeUnit.DAYS);
+                }
             }
         }
         return modelList;
@@ -50,10 +53,12 @@ public class ModelServiceImpl extends ServiceImpl<ModelMapper, Model> implements
             if(modelList != null && modelList.size() != 0){
                 modelMap = modelList.stream()
                         .collect(Collectors.toMap(model -> String.valueOf(model.getId()), Function.identity()));
-                //删除此键
-                redisTools.delete(RedisConstants.MODEL_HOT_MAP);
-                //重新赋值
-                redisTools.hPutAll(RedisConstants.MODEL_HOT_MAP, modelMap);
+                synchronized (this) {
+                    //删除此键
+                    redisTools.delete(RedisConstants.MODEL_HOT_MAP);
+                    //重新赋值
+                    redisTools.hPutAll(RedisConstants.MODEL_HOT_MAP, modelMap);
+                }
             }
         }
         //重新设置过期时间

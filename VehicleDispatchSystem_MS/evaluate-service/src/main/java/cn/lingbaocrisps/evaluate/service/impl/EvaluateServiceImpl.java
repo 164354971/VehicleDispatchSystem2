@@ -34,8 +34,6 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class EvaluateServiceImpl extends ServiceImpl<EvaluateMapper, Evaluate> implements IEvaluateService {
     private final RedisTools redisTools;
-    private final CarClient carClient;
-    private final UserClient userClient;
 
     private final IEvaluateImgService evaluateImgService;
 
@@ -56,14 +54,6 @@ public class EvaluateServiceImpl extends ServiceImpl<EvaluateMapper, Evaluate> i
         List<EvaluateVO> evaluateVOList = new LinkedList<>();
         for (Evaluate evaluate : evaluateList) {
             EvaluateVO evaluateVO = BeanUtils.copyBean(evaluate, EvaluateVO.class);
-
-            evaluateVO.setCoverImg("");
-            CarImgVO carImgVO = carClient.getCarImgVO(evaluate.getCarId(), 1);
-            if(carImgVO.getImgList().size() == 1){
-                String coverImg = carImgVO.getImgList().get(0);
-                evaluateVO.setCoverImg(coverImg);
-            }
-
             evaluateVOList.add(evaluateVO);
             double createTimestamp = Timestamp.valueOf(evaluateVO.getCreateTime()).getTime();
             redisTools.zAdd(RedisConstants.EVALUATE_VO_SET_NEW_KEY + brandId,

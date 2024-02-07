@@ -1,0 +1,1 @@
+<view class="warp"><view class="header"></view><view class="body"></view><view data-event-opts="{{[['tap',[['test',['$event']]]]]}}" class="footer" bindtap="__e"><view style="height:44px;"></view><block wx:if="{{isshow}}"><view class="box"></view></block></view></view>

@@ -3,11 +3,13 @@ package cn.lingbaocrisps.user.service;
 import cn.lingbaocrisps.user.domain.dto.LoginFormDTO;
 import cn.lingbaocrisps.user.domain.dto.RegisterFormDTO;
 import cn.lingbaocrisps.user.domain.po.User;
+import cn.lingbaocrisps.user.domain.vo.OtherVO;
 import cn.lingbaocrisps.user.domain.vo.UserVO;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 public interface IUserService extends IService<User> {
 
@@ -26,4 +28,6 @@ public interface IUserService extends IService<User> {
     Integer getUserStatus(Integer userId);
 
     String getUserImg(Integer userId);
+
+    List<OtherVO> getChatUserList(String str);
 }

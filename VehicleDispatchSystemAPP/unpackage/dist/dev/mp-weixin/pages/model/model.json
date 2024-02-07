@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-modal": "/node-modules/uview-ui/components/u-modal/u-modal",
+    "u-rate": "/node-modules/uview-ui/components/u-rate/u-rate",
+    "u-swiper": "/node-modules/uview-ui/components/u-swiper/u-swiper",
+    "u--text": "/node-modules/uview-ui/components/u--text/u--text",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "brand-reply-pop-up": "/components/brandReplyPopUp"
+  }
+}

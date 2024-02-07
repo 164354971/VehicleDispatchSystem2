@@ -1,8 +1,10 @@
 package cn.lingbaocrisps.car.controller;
 
-import cn.lingbaocrisps.car.domain.po.CarImg;
+import cn.lingbaocrisps.car.domain.dto.CarPageFormDTO;
 import cn.lingbaocrisps.car.domain.vo.CarImgVO;
+import cn.lingbaocrisps.car.domain.vo.CarPageFormVO;
 import cn.lingbaocrisps.car.service.ICarImgService;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
@@ -11,10 +13,7 @@ import cn.lingbaocrisps.car.domain.po.Car;
 import cn.lingbaocrisps.car.service.ICarService;
 import cn.lingbaocrisps.car.service.IDisableTimeService;
 import cn.lingbaocrisps.common.domain.R;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -64,10 +63,10 @@ public class CarController {
 
     @ApiOperation("根据id查询车辆图片列表")
     @GetMapping("/img/{carId}/{imgNumber}")
-    public CarImgVO getCarImgVO(@PathVariable Integer carId, @PathVariable Integer imgNumber){
+    public R<CarImgVO> getCarImgVO(@PathVariable Integer carId, @PathVariable Integer imgNumber){
         log.info("/cars/img/{carId}/{imgNumber} get -> getCarImgVO: " +
                 "carId = {}, imgNumber = {}; 根据id查询车辆", carId, imgNumber);
-        return carImgService.getCarImgVO(carId, imgNumber);
+        return R.ok(carImgService.getCarImgVO(carId, imgNumber));
     }
 
     @ApiOperation("根据iD查询车辆日租价格")
@@ -76,5 +75,12 @@ public class CarController {
         log.info("/cars/price/{carId} get -> getDayPrice: " +
                 "carId = {}; 根据iD查询车辆日租价格", carId);
         return carService.getDayPrice(carId);
+    }
+
+    @ApiOperation("根据车辆分页查询表单查询车辆数据")
+    @PostMapping("/page")
+    public R<IPage<CarPageFormVO>> findCarPage(@RequestBody CarPageFormDTO carPageFormDTO){
+        log.info("/cars/page post -> carPageFormDTO = {}; 车辆分页查询", carPageFormDTO.toString());
+        return R.ok(carService.findCarPage(carPageFormDTO));
     }
 }

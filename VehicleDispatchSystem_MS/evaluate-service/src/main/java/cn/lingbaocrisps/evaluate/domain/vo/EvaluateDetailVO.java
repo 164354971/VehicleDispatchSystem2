@@ -25,10 +25,10 @@ public class EvaluateDetailVO {
     private String evaluate;//varchar(80) default ''                not null comment '对车辆的评价的文字信息',
     @JsonSerialize(using = LocalDateTimeSerializer.class)
     @JsonDeserialize(using = LocalDateTimeDeserializer.class)
-    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+//    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;//datetime    default CURRENT_TIMESTAMP not null
     private String userImg;//展示的用户头像
-    private String userNickName;//用户昵称
+    private String userNickname;//用户昵称
     private BigDecimal dayPrice;//decimal(9,2) default 0.00
     private Integer rentDays;//租用天数
     private Integer vipLevel;//会员等级

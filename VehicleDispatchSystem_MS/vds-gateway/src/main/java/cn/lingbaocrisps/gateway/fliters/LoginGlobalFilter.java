@@ -37,7 +37,7 @@ public class LoginGlobalFilter implements GlobalFilter, Ordered {
         //1.获取请求头中的token
         ServerHttpRequest request = exchange.getRequest();
         //如果请求的路径和方法符合则直接放行
-        if(isAllowPath(request))
+        if(isNotAllowPath(request))
             return chain.filter(exchange);
         //获取请求头中的token
         HttpHeaders header = request.getHeaders();
@@ -47,7 +47,7 @@ public class LoginGlobalFilter implements GlobalFilter, Ordered {
             token = authorization.get(0);
 
         //2.jwt校验
-        Long userId = null;
+        Integer userId = null;
         try {
             userId = jwtTool.parseToken(token);
             log.info("LoginGlobalFilter userId: {}", userId);
@@ -72,16 +72,23 @@ public class LoginGlobalFilter implements GlobalFilter, Ordered {
         return 0;
     }
 
-    boolean isAllowPath(ServerHttpRequest request){
+    boolean isNotAllowPath(ServerHttpRequest request){
         //方法
         String methodValue = request.getMethodValue();
         //路径
         String path = request.getPath().toString();
-        for(String excludePath : authProperties.getExcludePaths()){
-            if(antPathMatcher.match(excludePath, path)){
-                return true;
+        for(String includePath : authProperties.getIncludePaths()){
+            String[] ss = includePath.split("::");
+            if(ss.length == 2){
+                if(methodValue.equals(ss[0]) && antPathMatcher.match(ss[1], path)){
+                    return false;
+                }
+            }else if(ss.length == 1){
+                if(antPathMatcher.match(ss[0], path)){
+                    return false;
+                }
             }
         }
-        return false;
+        return true;
     }
 }

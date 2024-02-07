@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "u-modal": "/node-modules/uview-ui/components/u-modal/u-modal",
+    "price": "/components/price",
+    "pay-password-pop-up": "/components/payPasswordPopUp"
+  },
+  "component": true
+}

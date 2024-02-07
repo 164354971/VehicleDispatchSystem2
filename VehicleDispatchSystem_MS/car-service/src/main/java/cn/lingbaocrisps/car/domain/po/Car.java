@@ -37,6 +37,7 @@ public class Car implements Serializable {
     private String model;// varchar(32)                              not null comment '型号名称',
     private String marketPrice;// varchar(30)                              null comment '市售价（字符串）',
     private String modelImg;// varchar(255)                             not null comment '模型图',
+    private String coverImg;
 
     private Boolean luxury;// tinyint(1)            default 0          null comment '是否豪华品牌',
     private Boolean newEnergy;// tinyint(1)            default 0          null comment '是否绿牌',

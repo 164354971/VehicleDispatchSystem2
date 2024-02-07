@@ -1,0 +1,312 @@
+{
+	// 如果您是通过uni_modules形式引入uView，可以忽略此配置
+	"easycom": {
+        "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+    },
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle":"custom",
+				"onReachBottonDistance":-100,
+				"enablePullDownRefresh": true,
+				"app-plus":{
+					"titleView":false
+				}
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+		
+			}
+		}
+		,{
+			"path": "pages/login/login_index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+		
+			}
+		}
+	    ,{
+            "path" : "pages/home/home",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/select/select",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"onReachBottonDistance":-100
+            }
+            
+        }
+        ,{
+            "path" : "pages/demo/demo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/brand/brand",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+            }
+            
+        }
+		,{
+		    "path" : "pages/chat/chat",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/chat/demo",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/chat/chat_details",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/model/model",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false,
+					"softinputMode": "adjustResize"
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/car/car",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/navigation/navigation",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/details/details",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/map/map",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/details/details_order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/obligation_list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/in_progress_list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/complete_list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/cancel_list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+            }
+            
+        }
+        ,{
+            "path" : "components/payPasswordPopUp",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/details/details_qrcode",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"enablePullDownRefresh": true
+	},
+	// 配置tabbar导航栏
+	"tabBar": {
+		"borderStyle": "black",
+		"selectedColor": "#0055ff",
+		"color": "#444444",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/index_hidden.png",
+				"selectedIconPath": "static/tabbar/index_selected.png",
+				"text": "首页"
+			},{
+				"pagePath": "pages/brand/brand",
+				"iconPath": "static/tabbar/car_hidden.png",
+				"selectedIconPath": "static/tabbar/car_selected.png",
+				"text": "选车"
+			},{
+				"pagePath": "pages/chat/chat",
+				"iconPath": "static/tabbar/chat_hidden.png",
+				"selectedIconPath": "static/tabbar/chat_selected.png",
+				"text": "消息"
+			},{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/tabbar/home_hidden.png",
+				"selectedIconPath": "static/tabbar/home_selected.png",
+				"text": "我的"
+			}
+		]
+	},
+	
+
+	"uniIdRouter": {}
+}

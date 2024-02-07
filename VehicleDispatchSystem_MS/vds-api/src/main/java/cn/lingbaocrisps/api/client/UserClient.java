@@ -1,5 +1,6 @@
 package cn.lingbaocrisps.api.client;
 
+import cn.lingbaocrisps.api.domain.bo.UserBO;
 import cn.lingbaocrisps.common.domain.R;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,5 +29,9 @@ public interface UserClient {
     @GetMapping("/users/img/{userId}")
     String getUserImg(@PathVariable Integer userId);
 
-
+    /**
+     * 查询用户BO
+     * */
+    @GetMapping("/users/bo/{userId}")
+    UserBO getUserBO(@PathVariable Integer userId);
 }

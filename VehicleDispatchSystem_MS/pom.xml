@@ -16,6 +16,7 @@
         <module>pay-service</module>
         <module>coupon-service</module>
         <module>evaluate-service</module>
+        <module>vds-websocket-service</module>
     </modules>
     <name>VehicleDispatchSystem</name>
     <description>VehicleDispatchSystem</description>

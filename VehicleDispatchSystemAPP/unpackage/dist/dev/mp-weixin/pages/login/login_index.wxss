@@ -1,0 +1,79 @@
+
+.content{
+	height: 100vh;
+	text-align: center;
+	background: url(/static/login/login_index.png) no-repeat;
+	background-size:100% 100%;
+	background-attachment:fixed;
+}
+.content::before {
+	content: "";
+	position: absolute; /* 一定要用绝对定位 */
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	-webkit-backdrop-filter: blur(3px);
+	        backdrop-filter: blur(3px); /* 模糊半径 */
+}
+.login{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 60rpx 30rpx;
+	border-radius: 10rpx;
+}
+.login .title{
+	margin-bottom: 100rpx;
+}
+.login .title>._span{
+	font-size: 36rpx;
+	font-weight: 650;
+	color: #fff;
+}
+.login .button{
+	display: inline-block;
+	color: aliceblue;
+	width: 540rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	background-color: rgba(0, 0, 255, 0.7);
+	border-radius: 80rpx;
+	margin-bottom: 30rpx;
+	box-shadow: 0 20rpx 40rpx #2a2c31;
+}
+.login .others{
+	display: flex;
+	margin: 15rpx 152rpx;
+	width: 280rpx;
+	margin-bottom: 60rpx;
+	justify-content: space-around;
+}
+.login .others>image{
+	display: inline-block;
+	width: 66rpx;
+	height: 66rpx;
+}
+.login .footer{
+	display: inline-block;
+	width: 580rpx;
+	color: #ffffff;
+}
+.login .footer .radio{
+	width: 26rpx;
+	height: 26rpx;
+	border-radius: 26rpx;
+	background-color: #fff;
+	margin-right: 10rpx;
+}
+.login .footer>._span{
+	display: inline-block;
+	font-size: 22rpx;
+}
+.login .footer>._span>._span{
+	color: #0389ff;
+}
+

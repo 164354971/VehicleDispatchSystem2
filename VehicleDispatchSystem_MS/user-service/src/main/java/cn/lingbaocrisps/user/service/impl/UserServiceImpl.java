@@ -6,6 +6,10 @@ import cn.lingbaocrisps.common.exception.BadRequestException;
 import cn.lingbaocrisps.common.exception.CommonException;
 import cn.lingbaocrisps.common.exception.ForbiddenException;
 import cn.lingbaocrisps.common.exception.PhoneException;
+import cn.lingbaocrisps.common.utils.BeanUtils;
+import cn.lingbaocrisps.common.utils.UserContext;
+import cn.lingbaocrisps.user.domain.vo.OtherVO;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.wf.captcha.SpecCaptcha;
@@ -32,6 +36,8 @@ import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -110,6 +116,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         vo.setToken(token);
         vo.setUserImg(user.getImg());
         vo.setNickname(user.getNickname());
+        vo.setVipLevel(user.getVipLevel());
+        vo.setDriverType(user.getDriverType());
         return vo;
     }
 
@@ -287,6 +295,29 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     @Override
     public String getUserImg(Integer userId) {
         return this.baseMapper.getUserImg(userId);
+    }
+
+    @Override
+    public List<OtherVO> getChatUserList(String str) {
+        //查用户名和用户昵称
+        LambdaQueryWrapper<User> qw = new LambdaQueryWrapper<>();
+        qw.like(User::getUsername, str).or().like(User::getNickname, str);
+        List<User> userList = list(qw);
+        log.info("userList = {}", userList);
+        List<OtherVO> otherList = new ArrayList<>();
+        userList.stream().forEach(user -> {
+            if(!user.getId().equals(UserContext.getUser())){
+                OtherVO otherVO = new OtherVO();
+                otherVO.setUserId(user.getId());
+                otherVO.setUsername(user.getUsername());
+                otherVO.setNickname(user.getNickname());
+                otherVO.setUserImg(user.getImg());
+                otherVO.setVipLevel(user.getVipLevel());
+                otherList.add(otherVO);
+            }
+        });
+        return otherList;
+
     }
 
 

@@ -40,4 +40,5 @@ public class PayController {
     Integer getPaymentStatus(@PathVariable("orderNo") Long orderNo){
         return payOrderService.getPaymentStatus(orderNo);
     }
+
 }

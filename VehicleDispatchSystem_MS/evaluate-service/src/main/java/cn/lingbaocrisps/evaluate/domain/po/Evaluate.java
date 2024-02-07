@@ -23,7 +23,7 @@ public class Evaluate {
     private Integer rentDays;//租用天数
     private Integer vipLevel;//会员等级
     private Integer score;//tinyint     default 5                 not null comment '用户对车辆的评分',
-    private String userNickName;//varchar(10) default ''                not null comment '用户昵称',
+    private String userNickname;//varchar(10) default ''                not null comment '用户昵称',
     private String userImg;//varchar(255) default ''                not null comment '用户头像',
     private String evaluate;//varchar(80) default ''                not null comment '对车辆的评价的文字信息',
     private BigDecimal dayPrice;//decimal(9,2) default 0.00

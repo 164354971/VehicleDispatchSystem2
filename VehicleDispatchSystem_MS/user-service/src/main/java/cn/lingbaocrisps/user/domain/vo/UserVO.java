@@ -13,4 +13,6 @@ public class UserVO {
     private String username;
     private String nickname;
     private String userImg;
+    private Integer vipLevel;
+    private String driverType;
 }

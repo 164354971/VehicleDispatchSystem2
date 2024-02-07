@@ -2,10 +2,12 @@ spring:
   application:
     name: vds-coupon-service      #微服务名称
   profiles:
-    active: local
+    #active: local
+    active: dev
   cloud:
     nacos:
-      server-addr: 8.130.27.16:8848
+      #server-addr: 8.130.27.16:8848
+      server-addr: 192.168.49.128:8848
       config:
         file-extension: yaml
         shared-configs:

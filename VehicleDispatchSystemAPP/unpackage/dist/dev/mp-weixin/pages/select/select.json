@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "onReachBottonDistance": -100,
+  "usingComponents": {
+    "u-overlay": "/node-modules/uview-ui/components/u-overlay/u-overlay",
+    "u-loading-page": "/node-modules/uview-ui/components/u-loading-page/u-loading-page"
+  }
+}

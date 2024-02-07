@@ -1,0 +1,163 @@
+
+.content{
+	text-align: center;
+	border-radius: 20rpx 20rpx 0 0;
+}
+.pay-view{
+	margin-bottom: 130rpx;
+}
+.password{
+	padding: 50rpx 20rpx;
+}
+.password view{
+	margin: 30rpx 10rpx;
+}
+.password .title{
+	font-size: 46rpx;
+	font-weight: 650;
+}
+.password .tip{
+	font-size: 28rpx;
+	color: #ff3b00;
+}
+.password .password-item{
+	display: inline-block;
+	width: 90rpx;
+	height: 90rpx;
+	line-height: 90rpx;
+	margin: 20rpx 10rpx;
+}
+.numbers{
+	padding: 20rpx;
+}
+.numbers .number{
+	display: inline-block;
+	width: 210rpx;
+	height: 140rpx;
+	line-height: 140rpx;
+	border-bottom: 2rpx solid #bcd7ff;
+	margin: 0 10rpx;
+	font-size: 34rpx;
+	font-weight: 650;
+	color: #444444;
+}
+.button{
+	display: inline-block;
+	width: 600rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	border-radius: 30rpx;
+	background-image: linear-gradient(to top, #ffbd83 , #ffcca7);
+	color: #fff;
+	margin: 30rpx 0;
+	font-size: 36rpx;
+	font-weight: 650;
+}
+.no-bold{
+	border: 2rpx solid #1f1f1f;
+}
+.bold{
+	border: 2rpx solid #00aaff;
+}
+
+
+.pay{
+	text-align: center;
+	margin: 20rpx 0 80rpx;
+}
+.pay image{
+	width: 46rpx;
+	height: 46rpx;
+	line-height: 46rpx;
+	margin-right: 2rpx;
+}
+.pay .price{
+	margin-top: 60rpx;
+	margin-bottom: 120rpx;
+	font-size: 52rpx;
+}
+.pay .price > ._span{
+	font-size: 76rpx;
+	font-weight: 650;
+}
+.pay .username,
+.pay .payment{
+	padding: 20rpx 0;
+	margin: 0 36rpx;
+	overflow: hidden;
+	color: #5e5e5e;
+	height: 46rpx;
+	line-height: 46rpx;
+}
+.pay .username{
+	border-bottom: #e2e2e2 1rpx solid;
+}
+.pay .payment-list{
+	margin: 10rpx 36rpx 50rpx;
+	padding: 20rpx;
+	background-color: #f9f9f9;
+	border-radius: 20rpx;
+	text-align: left;
+	overflow: hidden;
+	color: #5e5e5e;
+}
+.pay .payment-list .title{
+	font-size: 26rpx;
+	font-weight: 650;
+	margin: 0 6rpx;
+}
+.pay .payment-list .payment-item{
+	height: 46rpx;
+	line-height: 46rpx;
+	font-size: 30rpx;
+	padding: 26rpx 10rpx;
+	border-bottom: #e2e2e2 1rpx solid;
+}
+.pay .payment-list .payment-item ._span{
+	padding: 0 3rpx;
+}
+.pay .button{
+	display: inline-block;
+	font-size: 36rpx;
+	color: aliceblue;
+	width: 540rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	background-color: #0055ff;
+	border-radius: 20rpx;
+	margin-bottom: 30rpx;
+	padding: 4rpx 0;
+	box-shadow: 0 20rpx 40rpx #dce7ff;
+}
+.pay .others{
+	display: flex;
+	margin: 15rpx 235rpx;
+	width: 280rpx;
+	margin-bottom: 60rpx;
+	justify-content: space-around;
+}
+.pay .others>image{
+	display: inline-block;
+	width: 66rpx;
+	height: 66rpx;
+}
+.pay .footer{
+	display: inline-block;
+	width: 580rpx;
+}
+.pay .footer .radio{
+	display: inline-block;
+	width: 26rpx;
+	height: 26rpx;
+	border-radius: 26rpx;
+	border: 2rpx solid #020202;
+	margin-right: 10rpx;
+}
+.pay .footer>._span{
+	display: inline-block;
+	font-size: 22rpx;
+}
+.pay .footer>._span>._span{
+	color: #00aaff;
+}
+

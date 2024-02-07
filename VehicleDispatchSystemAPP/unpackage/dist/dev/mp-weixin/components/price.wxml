@@ -1,0 +1,1 @@
+<view style="display:inline-block;"><label class="_span">{{salary}}</label></view>

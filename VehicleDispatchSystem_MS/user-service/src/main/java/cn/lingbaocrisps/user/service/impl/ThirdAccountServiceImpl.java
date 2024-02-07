@@ -140,6 +140,7 @@ public class ThirdAccountServiceImpl extends ServiceImpl<ThirdAccountMapper, Thi
         vo.setUserImg(user.getImg());
         //vo.setSalary(user.getSalary());
         vo.setToken(token);
+        vo.setVipLevel(user.getVipLevel());
         return vo;
     }
 
