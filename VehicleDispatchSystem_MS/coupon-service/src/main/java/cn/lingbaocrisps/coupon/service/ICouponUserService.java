@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface ICouponUserService extends IService<CouponUser> {
 
-
+    boolean updateStatus(Long couponId, Integer status, Integer oldCouponUserStatus);
 }

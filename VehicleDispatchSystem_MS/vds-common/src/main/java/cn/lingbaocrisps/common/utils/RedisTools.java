@@ -47,7 +47,16 @@ public class RedisTools {
         redisTemplate.opsForValue().set(key, field, timeout, unit);
     }
 
-
+    /**
+     * 添加string(加锁过期时间)
+     *
+     * @param key
+     * @param field
+     */
+    public boolean setIfAbsent(String key, String field, long timeout, TimeUnit unit) {
+        boolean flag = redisTemplate.opsForValue().setIfAbsent(key, field, timeout, unit);
+        return flag;
+    }
     public <T> T get(String key, Class<T> clazz) {
         Object o = redisTemplate.opsForValue().get(key);
         if (o == null) {

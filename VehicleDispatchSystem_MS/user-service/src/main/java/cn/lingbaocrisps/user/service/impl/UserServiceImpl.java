@@ -289,7 +289,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     public Integer getUserStatus(Integer userId){
         QueryWrapper<User> qw = new QueryWrapper<>();
         User user = getOne(qw.eq("id", userId));
-        return user.getStatus().getValue();
+        return Integer.parseInt(String.valueOf(user.getStatus().getValue()));
     }
 
     @Override

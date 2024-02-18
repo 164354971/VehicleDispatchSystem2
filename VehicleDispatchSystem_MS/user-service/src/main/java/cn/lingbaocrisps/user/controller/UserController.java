@@ -38,6 +38,7 @@ public class UserController {
 
     @GetMapping("/status/{userId}")
     public R<Integer> getUserStatus(@PathVariable Integer userId){
+        log.info("/users/status/{userId} get -> getUserStatus: userId = {}; 获取用户状态", userId);
         return R.ok(userService.getUserStatus(userId));
     }
 

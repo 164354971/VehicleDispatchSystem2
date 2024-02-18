@@ -1,5 +1,7 @@
 package cn.lingbaocrisps.trade.service.impl;
 
+import cn.lingbaocrisps.common.annotate.RepeatSubmit;
+import cn.lingbaocrisps.common.domain.R;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import io.seata.spring.annotation.GlobalTransactional;
@@ -26,13 +28,19 @@ import cn.lingbaocrisps.trade.domain.po.Order;
 import cn.lingbaocrisps.trade.domain.vo.OrderVO;
 import org.springframework.amqp.AmqpException;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Service;
 import cn.lingbaocrisps.trade.mapper.OrderMapper;
 import cn.lingbaocrisps.trade.service.IOrderService;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Map;
+import java.util.Objects;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -50,11 +58,15 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
 
     private final RabbitTemplate rabbitTemplate;
 
+    private final ThreadPoolTaskExecutor threadPoolTaskExecutor;
+
     @Override
+    @RepeatSubmit
     @GlobalTransactional        //seata分布式事务的全局事务，对其中的业务（@Transactional注解）进行分布式事务的控制
     public OrderVO createOrder(OrderFormDTO orderFormDTO) {
         //1.获取用户状态，从表中判断用户状态是否可用
         Integer userId = UserContext.getUser();
+        log.info(String.valueOf(userId));
         Integer userStatus = userClient.getUserStatus(userId).getData();
         if(userStatus.equals(0)){
             throw new ForbiddenException("用户已被禁用");
@@ -65,6 +77,35 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         Car car = carClient.getById(carId);
         if(car == null){
             throw new ForbiddenException("车辆数据非法");
+        }
+        //判断用户优惠券是否合法且可用
+        if(orderFormDTO.getCouponUserId() != 0) {
+            Callable<String> couponCallable = () -> {
+                CouponUser couponUser = couponClient.findByCouponUserId(orderFormDTO.getCouponUserId()).getData();
+                if(couponUser == null){
+                    throw new ForbiddenException("优惠券数据非法");
+                }
+                if(couponUser.getCouponId() == null){
+                    throw new ForbiddenException("优惠券数据非法");
+                }
+                if (couponUser.getStatus() != 1){
+                    throw new ForbiddenException("优惠券已被禁用");
+                }
+                if(couponUser.getStartTime().isAfter(orderFormDTO.getEndTime()) || couponUser.getEndTime().isBefore(orderFormDTO.getStartTime())){
+                    throw new ForbiddenException("优惠券不在可用时间");
+                }
+                //禁用此优惠券
+                //更新
+                R<Boolean> booleanR = couponClient.updateCouponUser(couponUser.getId(), 0, couponUser.getStatus());
+                return String.format("couponUserId:%d已禁用\n", couponUser.getId());
+            };
+            Future<String> submit = threadPoolTaskExecutor.submit(couponCallable);
+            try {
+                String couponCallableSubmit = submit.get();
+                log.info(couponCallableSubmit);
+            } catch (InterruptedException | ExecutionException e) {
+                throw new RuntimeException(e);
+            }
         }
         //3 车辆id合法,判断租的车在订单选中的时间段是否不可用
         //3.1 先从redis中查询是否有订单中租车车辆在该时间段（订单的租车开始时间，订单的租车结束时间）
@@ -118,12 +159,12 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         order.setCommission(car.getCommission());
         order.setPaymentAmount(paymentAmount);
 
+        log.info(Objects.toString(order));
+        //6.写入订单表
+        save(order);
         //5.写入redis并配置订单过期时间为5分钟
         redisTools.hput(RedisConstants.ORDER_MAP, String.valueOf(orderNo), order);
         redisTools.set(RedisConstants.ORDER_KEY + orderNo, JSON.toJSONString(order), 5L, TimeUnit.MINUTES);
-
-        //6.写入订单表
-        save(order);
 
         //7.发送mq消息，延迟查询订单支付状态(10s, 10s, 20s, 20s, 30s, 30s, 60s, 120s)
         try {
@@ -139,19 +180,46 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         return BeanUtils.copyBean(order, OrderVO.class);
     }
 
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public void cancelOrder(Long orderId) {
         if(redisTools.hasKey(RedisConstants.ORDER_KEY + orderId)){
-            //如果订单还存在，先移除redis中的订单
-            redisTools.hDelete(RedisConstants.ORDER_MAP, RedisConstants.ORDER_KEY + orderId);
-            //再移除这个string
-            redisTools.delete(RedisConstants.ORDER_KEY + orderId);
+            Runnable removeKeyRunnable = () -> {
+                //如果订单还存在，先移除redis中的订单
+                redisTools.hDelete(RedisConstants.ORDER_MAP, RedisConstants.ORDER_KEY + orderId);
+                //再移除这个string
+                redisTools.delete(RedisConstants.ORDER_KEY + orderId);
+            };
+            threadPoolTaskExecutor.execute(removeKeyRunnable);
         }
-        //再更新数据库中的订单状态
-        lambdaUpdate().set(Order::getOrderStatus, 3)
-                .set(Order::getCloseTime, LocalDateTime.now())
-                .eq(Order::getId, orderId)
-                .update();
+        Callable<String> couponUserStatusUpdateCallable = () -> {
+            //将使用的用户优惠券启用
+            Order order = lambdaQuery().eq(Order::getId, orderId).one();
+            Long couponUserId = order.getCouponUserId();
+            if (couponUserId != 0) {
+                CouponUser couponUser = couponClient.findByCouponUserId(couponUserId).getData();
+                couponUser.setStatus(1);
+                couponClient.updateCouponUser(couponUser.getId(), 1, couponUser.getStatus());
+            }
+            return String.format("couponUserId:%d已重新启用\n", couponUserId);
+        };
+        Future<String> couponUserStatusUpdateSubmit = threadPoolTaskExecutor.submit(couponUserStatusUpdateCallable);
+        Callable<String> orderStatusUpdateCallable = () -> {
+            //再更新数据库中的订单状态
+            lambdaUpdate().set(Order::getOrderStatus, 3)
+                    .set(Order::getCloseTime, LocalDateTime.now())
+                    .eq(Order::getId, orderId)
+                    .update();
+            return String.format("订单id:%d已取消\n", orderId);
+        };
+        Future<String> orderStatusUpdateSubmit = threadPoolTaskExecutor.submit(orderStatusUpdateCallable);
+        try {
+            String couponUserStatusUpdateResult = couponUserStatusUpdateSubmit.get();
+            String orderStatusUpdateResult = orderStatusUpdateSubmit.get();
+            log.info(couponUserStatusUpdateResult + orderStatusUpdateResult);
+        }catch (InterruptedException | ExecutionException e){
+            e.printStackTrace();
+        }
     }
 
     @Override

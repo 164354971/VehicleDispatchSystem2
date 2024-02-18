@@ -37,7 +37,8 @@ public class PayController {
      * */
     @ApiOperation("根据订单号查询支付表的支付状态")
     @GetMapping("/{orderNo}")
-    Integer getPaymentStatus(@PathVariable("orderNo") Long orderNo){
+    Integer getPaymentStatus(@PathVariable Long orderNo){
+        log.info("根据订单号查询支付表的支付状态，orderNo={}", orderNo);
         return payOrderService.getPaymentStatus(orderNo);
     }
 

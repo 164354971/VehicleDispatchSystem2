@@ -7,10 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import cn.lingbaocrisps.common.domain.R;
 import cn.lingbaocrisps.coupon.domain.po.CouponUser;
 import cn.lingbaocrisps.coupon.service.ICouponUserService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -30,5 +27,8 @@ public class CouponUserController {
         return R.ok(couponUserService.getById(couponUserId));
     }
 
-
+    @PutMapping("/update/{couponUserId}/{couponUserStatus}/{oldCouponUserStatus}")
+    R<Boolean> updateCouponUser(@PathVariable Long couponUserId, @PathVariable Integer couponUserStatus, @PathVariable Integer oldCouponUserStatus){
+        return R.ok(couponUserService.updateStatus(couponUserId, couponUserStatus, oldCouponUserStatus));
+    }
 }

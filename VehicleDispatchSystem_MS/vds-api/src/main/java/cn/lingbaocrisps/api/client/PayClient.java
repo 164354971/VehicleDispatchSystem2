@@ -13,5 +13,5 @@ public interface PayClient {
      * @return 支付状态
      * */
     @GetMapping("/pays/{orderNo}")
-    Integer getPaymentStatus(@PathVariable("orderNo") Long orderNo);
+    Integer getPaymentStatus(@PathVariable Long orderNo);
 }
