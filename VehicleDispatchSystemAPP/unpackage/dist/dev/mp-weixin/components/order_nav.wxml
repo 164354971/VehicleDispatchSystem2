@@ -1,0 +1,1 @@
+<view class="order-nav"><block wx:for="{{name}}" wx:for-item="item" wx:for-index="idx"><view><block wx:if="{{orderNavIdx==idx}}"><label class="change _span">{{item}}</label></block><block wx:else><label data-event-opts="{{[['tap',[['toNav',[idx]]]]]}}" bindtap="__e" class="_span">{{item}}</label></block></view></block></view>

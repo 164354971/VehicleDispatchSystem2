@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "onReachBottonDistance": -100,
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "u-datetime-picker": "/node-modules/uview-ui/components/u-datetime-picker/u-datetime-picker",
+    "u-swiper": "/node-modules/uview-ui/components/u-swiper/u-swiper",
+    "login-pop-up": "/components/loginPopUp"
+  }
+}

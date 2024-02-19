@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.lingbaocrisps.common.config.MyBatisConfig,\
+  cn.lingbaocrisps.common.config.JsonConfig,\
+  cn.lingbaocrisps.common.config.MvcConfig,\
+  cn.lingbaocrisps.common.config.RedisConfig,\
+  cn.lingbaocrisps.common.config.MqConfig

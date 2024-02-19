@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-search": "/node-modules/uview-ui/components/u-search/u-search",
+    "price": "/components/price",
+    "order-nav": "/components/order_nav",
+    "obligation": "/pages/order/obligation_list",
+    "in-progress": "/pages/order/in_progress_list",
+    "complete": "/pages/order/complete_list",
+    "cancel": "/pages/order/cancel_list"
+  }
+}

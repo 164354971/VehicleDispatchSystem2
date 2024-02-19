@@ -1,9 +1,0 @@
-server:
-  port: 9001
-
-vds:
-  jwt:
-    location: classpath:vds.jks
-    alias: hmall
-    password: hmall123
-    tokenTTL: 30m

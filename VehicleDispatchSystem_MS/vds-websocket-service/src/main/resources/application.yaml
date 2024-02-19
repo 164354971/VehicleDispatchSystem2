@@ -1,0 +1,13 @@
+server:
+  port: 9999
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+vds:
+  jwt:
+    location: classpath:vds.jks
+    alias: vds
+    password: ty70432159
+    tokenTTL: 7d

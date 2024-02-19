@@ -1,0 +1,19 @@
+
+.order-nav{
+	width: 720rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	padding: 0 15rpx;
+	background-color: #f4f4f4
+}
+.order-nav view{
+	display: inline-block;
+	width: 180rpx;
+	text-align: center;
+	color: #424242;
+}
+.change{
+	font-weight: 650;
+	color: #faa40d;
+}
+

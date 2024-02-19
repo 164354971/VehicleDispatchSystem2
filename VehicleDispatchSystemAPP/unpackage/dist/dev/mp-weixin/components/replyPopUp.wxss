@@ -1,0 +1,11 @@
+
+.button{
+	width: 150rpx;
+	display: inline-block;
+	vertical-align: middle;
+	border: none;
+	text-align: center;
+	color: #ccc;
+	font-size: 30rpx;
+}
+

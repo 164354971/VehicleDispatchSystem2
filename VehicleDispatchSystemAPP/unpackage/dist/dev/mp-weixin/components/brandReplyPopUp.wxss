@@ -1,0 +1,77 @@
+
+.reply{
+	text-align: center;
+	height: 80vh;
+	padding: 0 0 80rpx;
+	background-color: #fafafa;
+}
+.reply-input{
+	padding: 0 20rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	background-color: #f2f2f9;
+	color: #91949e;
+	display: flex;
+}
+.user-evaluate {
+	display: inline-block;
+	width: 566rpx;
+	margin-left: 16rpx;
+	text-align: left;
+	vertical-align: top;
+}
+.user-evaluate ._span{
+	font-size: 26rpx;
+}
+.user-evaluate .eva-name{
+	color: #7d8191;
+	font-size: 26rpx;
+	font-weight: 700;
+}
+.user-evaluate .eva-label{
+	color: #91949e;
+	font-size: 22rpx;
+	font-weight: 500;
+}
+.user-evaluate .eva-time{
+	color: #a3a6b1;
+	font-size: 22rpx;
+	font-weight: 500;
+}
+.user-evaluate .eva-reply{
+	color: #2a2b2e;
+	font-size: 24rpx;
+	font-weight: 500;
+}
+.user-evaluate .eva-price { 
+	float: right;
+	margin-top: 10rpx;
+	background-color: #fff6dd;
+	color: #ff6769;
+	font-weight: 550;
+	font-size: 22rpx;
+}
+.user-evaluate .eva-reply-list{
+	color: #0600c4;
+	font-weight: 700;
+}
+.user-evaluate-img{
+	display: inline-block;
+	text-align: left;
+}
+.user-evaluate-img .eva-image{
+	width: 232rpx;
+	height: 174rpx; 
+	object-fit: cover;
+}
+.vip{
+	font-size: 22rpx;
+	background-image: linear-gradient(to right, #262639 , #565658);
+	color: #ffdf7d;
+	border-radius: 14rpx;
+	padding: 0 12rpx 0 6rpx;
+	margin-left: 6rpx;
+	font-weight: bold;
+	font-style: italic;
+}
+

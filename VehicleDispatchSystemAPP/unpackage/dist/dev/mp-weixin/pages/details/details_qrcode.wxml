@@ -1,0 +1,1 @@
+<view class="content"><view class="nav">取车二维码</view><view class="canvas"><canvas style="width:180px;height:180px;" canvas-id="qrcode"></canvas></view><view class="body"><view><label class="_span">{{"位置："+area}}</label></view><view><label class="_span">{{parkade+''}}</label></view><view class="button" click><label class="_span">导航</label></view></view></view>

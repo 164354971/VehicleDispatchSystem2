@@ -1,0 +1,447 @@
+02:20:36:909  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel [id: 0x8c9e98db, L:/192.168.49.1:50671 - R:/192.168.49.128:8099] read idle.
+02:20:36:920  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel [id: 0x9797e235, L:/192.168.49.1:50718 - R:/192.168.49.128:8099] read idle.
+02:20:37:455  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x8c9e98db, L:/192.168.49.1:50671 - R:/192.168.49.128:8099]
+02:20:37:455  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x9797e235, L:/192.168.49.1:50718 - R:/192.168.49.128:8099]
+02:20:37:456  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x8c9e98db, L:/192.168.49.1:50671 - R:/192.168.49.128:8099]) will closed
+02:20:37:457  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x8c9e98db, L:/192.168.49.1:50671 ! R:/192.168.49.128:8099]) will closed
+02:20:37:456  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x9797e235, L:/192.168.49.1:50718 - R:/192.168.49.128:8099]) will closed
+02:20:37:462  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x8c9e98db, L:/192.168.49.1:50671 ! R:/192.168.49.128:8099]
+02:20:37:462  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x8c9e98db, L:/192.168.49.1:50671 ! R:/192.168.49.128:8099]
+02:20:37:462  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x8c9e98db, L:/192.168.49.1:50671 ! R:/192.168.49.128:8099]
+02:20:37:462  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x9797e235, L:/192.168.49.1:50718 ! R:/192.168.49.128:8099]) will closed
+02:20:37:462  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x8c9e98db, L:/192.168.49.1:50671 ! R:/192.168.49.128:8099]) will closed
+02:20:37:462  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x8c9e98db, L:/192.168.49.1:50671 ! R:/192.168.49.128:8099]) will closed
+02:20:37:462  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x8c9e98db, L:/192.168.49.1:50671 ! R:/192.168.49.128:8099]
+02:20:37:462  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x8c9e98db, L:/192.168.49.1:50671 ! R:/192.168.49.128:8099]
+02:20:37:463  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x8c9e98db, L:/192.168.49.1:50671 ! R:/192.168.49.128:8099]
+02:20:37:463  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x8c9e98db, L:/192.168.49.1:50671 ! R:/192.168.49.128:8099]) will closed
+02:20:37:462  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x9797e235, L:/192.168.49.1:50718 ! R:/192.168.49.128:8099]
+02:20:37:463  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x8c9e98db, L:/192.168.49.1:50671 ! R:/192.168.49.128:8099]) will closed
+02:20:37:463  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x9797e235, L:/192.168.49.1:50718 ! R:/192.168.49.128:8099]
+02:20:37:463  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x9797e235, L:/192.168.49.1:50718 ! R:/192.168.49.128:8099]
+02:20:37:463  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x9797e235, L:/192.168.49.1:50718 ! R:/192.168.49.128:8099]) will closed
+02:20:37:463  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x9797e235, L:/192.168.49.1:50718 ! R:/192.168.49.128:8099]) will closed
+02:20:37:463  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x9797e235, L:/192.168.49.1:50718 ! R:/192.168.49.128:8099]
+02:20:37:463  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x9797e235, L:/192.168.49.1:50718 ! R:/192.168.49.128:8099]
+02:20:37:464  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x9797e235, L:/192.168.49.1:50718 ! R:/192.168.49.128:8099]
+02:20:37:464  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x9797e235, L:/192.168.49.1:50718 ! R:/192.168.49.128:8099]) will closed
+02:20:37:464  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x9797e235, L:/192.168.49.1:50718 ! R:/192.168.49.128:8099]) will closed
+02:20:39:002  INFO 4276 --- [timeoutChecker_2_1] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.49.128:8099
+02:20:39:002  INFO 4276 --- [timeoutChecker_2_1] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.49.128:3306/vehicle_dispatch
+02:20:39:002  INFO 4276 --- [timeoutChecker_2_1] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.49.128:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.49.128:3306/vehicle_dispatch', applicationId='vds-websocket-service', transactionServiceGroup='vds'} >
+02:20:39:006  INFO 4276 --- [timeoutChecker_2_1] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xa4e3c86d, L:/192.168.49.1:61832 - R:/192.168.49.128:8099]
+02:20:39:006  INFO 4276 --- [timeoutChecker_2_1] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 2 ms, version:1.5.2,role:RMROLE,channel:[id: 0xa4e3c86d, L:/192.168.49.1:61832 - R:/192.168.49.128:8099]
+02:20:39:217  INFO 4276 --- [nacos-grpc-client-executor-5743] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Receive server push request, request = ClientDetectionRequest, requestId = 112
+02:20:39:218  INFO 4276 --- [nacos-grpc-client-executor-5743] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Ack server push request, request = ClientDetectionRequest, requestId = 112
+02:20:39:221  INFO 4276 --- [nacos-grpc-client-executor-5757] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Receive server push request, request = ClientDetectionRequest, requestId = 116
+02:20:39:221  INFO 4276 --- [nacos-grpc-client-executor-5757] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Ack server push request, request = ClientDetectionRequest, requestId = 116
+02:20:39:221  INFO 4276 --- [nacos-grpc-client-executor-6101] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Receive server push request, request = ClientDetectionRequest, requestId = 114
+02:20:39:221  INFO 4276 --- [nacos-grpc-client-executor-6101] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Ack server push request, request = ClientDetectionRequest, requestId = 114
+02:20:39:227 ERROR 4276 --- [nacos-grpc-client-executor-5744] c.a.n.c.remote.client.grpc.GrpcClient    : [1708246215254_192.168.49.1_64116]Request stream onCompleted, switch server
+02:20:39:227  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+02:20:39:249  INFO 4276 --- [nacos-grpc-client-executor-5758] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Receive server push request, request = NotifySubscriberRequest, requestId = 122
+02:20:39:253  INFO 4276 --- [nacos-grpc-client-executor-5758] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Ack server push request, request = NotifySubscriberRequest, requestId = 122
+02:20:39:360  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Success to connect a server [192.168.49.128:8848], connectionId = 1708280439249_192.168.49.1_61836
+02:20:39:360  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Abandon prev connection, server is 192.168.49.128:8848, connectionId is 1708246215254_192.168.49.1_64116
+02:20:39:360  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1708246215254_192.168.49.1_64116
+02:20:39:360  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Notify disconnected event to listeners
+02:20:39:361  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Notify connected event to listeners.
+02:20:39:846  INFO 4276 --- [timeoutChecker_1_1] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.49.128:8099
+02:20:39:846  INFO 4276 --- [timeoutChecker_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.49.128:8099,msg:< RegisterTMRequest{applicationId='vds-websocket-service', transactionServiceGroup='vds'} >
+02:20:39:849  INFO 4276 --- [timeoutChecker_1_1] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x31385cef, L:/192.168.49.1:61850 - R:/192.168.49.128:8099]
+02:20:39:849  INFO 4276 --- [timeoutChecker_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 2 ms, version:1.5.2,role:TMROLE,channel:[id: 0x31385cef, L:/192.168.49.1:61850 - R:/192.168.49.128:8099]
+02:20:40:255  INFO 4276 --- [nacos-grpc-client-executor-5759] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Receive server push request, request = NotifySubscriberRequest, requestId = 128
+02:20:40:257  INFO 4276 --- [nacos-grpc-client-executor-5759] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Ack server push request, request = NotifySubscriberRequest, requestId = 128
+02:21:02:120  WARN 4276 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m55s851ms195µs101ns).
+09:35:31:021  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x31385cef, L:/192.168.49.1:61850 ! R:/192.168.49.128:8099]
+09:35:31:021  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x31385cef, L:/192.168.49.1:61850 ! R:/192.168.49.128:8099]
+09:35:31:021  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x31385cef, L:/192.168.49.1:61850 ! R:/192.168.49.128:8099]) will closed
+09:35:31:021  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x31385cef, L:/192.168.49.1:61850 ! R:/192.168.49.128:8099]) will closed
+09:35:31:022  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x31385cef, L:/192.168.49.1:61850 ! R:/192.168.49.128:8099]
+09:35:31:022  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x31385cef, L:/192.168.49.1:61850 ! R:/192.168.49.128:8099]
+09:35:31:022  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x31385cef, L:/192.168.49.1:61850 ! R:/192.168.49.128:8099]
+09:35:31:021  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0xa4e3c86d, L:/192.168.49.1:61832 ! R:/192.168.49.128:8099]
+09:35:31:022  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xa4e3c86d, L:/192.168.49.1:61832 ! R:/192.168.49.128:8099]
+09:35:31:022  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x31385cef, L:/192.168.49.1:61850 ! R:/192.168.49.128:8099]) will closed
+09:35:31:022  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xa4e3c86d, L:/192.168.49.1:61832 ! R:/192.168.49.128:8099]) will closed
+09:35:31:022  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xa4e3c86d, L:/192.168.49.1:61832 ! R:/192.168.49.128:8099]) will closed
+09:35:31:022  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0xa4e3c86d, L:/192.168.49.1:61832 ! R:/192.168.49.128:8099]
+09:35:31:022  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0xa4e3c86d, L:/192.168.49.1:61832 ! R:/192.168.49.128:8099]
+09:35:31:022  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x31385cef, L:/192.168.49.1:61850 ! R:/192.168.49.128:8099]) will closed
+09:35:31:022  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xa4e3c86d, L:/192.168.49.1:61832 ! R:/192.168.49.128:8099]
+09:35:31:022  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xa4e3c86d, L:/192.168.49.1:61832 ! R:/192.168.49.128:8099]) will closed
+09:35:31:024  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xa4e3c86d, L:/192.168.49.1:61832 ! R:/192.168.49.128:8099]) will closed
+09:35:31:179  INFO 4276 --- [timeoutChecker_1_1] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.49.128:8099
+09:35:31:180  INFO 4276 --- [timeoutChecker_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.49.128:8099,msg:< RegisterTMRequest{applicationId='vds-websocket-service', transactionServiceGroup='vds'} >
+09:35:32:086 ERROR 4276 --- [nacos-grpc-client-executor-6467] c.a.n.c.remote.client.grpc.GrpcClient    : [1708280439249_192.168.49.1_61836]Request stream error, switch server,error={}
+
+com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:356) ~[na:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1140) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
+	... 1 common frames omitted
+
+09:35:32:090  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+09:35:32:399  INFO 4276 --- [timeoutChecker_2_1] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.49.128:8099
+09:35:32:593  INFO 4276 --- [timeoutChecker_2_1] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.49.128:3306/vehicle_dispatch
+09:35:32:564 ERROR 4276 --- [nacos-grpc-client-executor-6477] c.a.n.c.remote.client.grpc.GrpcClient    : [1708263756631_192.168.49.1_51113]Request stream error, switch server,error={}
+
+com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:356) ~[na:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1140) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
+	... 1 common frames omitted
+
+09:35:32:593  INFO 4276 --- [timeoutChecker_2_1] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.49.128:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.49.128:3306/vehicle_dispatch', applicationId='vds-websocket-service', transactionServiceGroup='vds'} >
+09:35:32:665 ERROR 4276 --- [nacos-grpc-client-executor-6881] c.a.n.c.remote.client.grpc.GrpcClient    : [1708263757243_192.168.49.1_51135]Request stream error, switch server,error={}
+
+com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:356) ~[na:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1140) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
+	... 1 common frames omitted
+
+09:35:32:667  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+09:35:32:787  INFO 4276 --- [timeoutChecker_1_1] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xc3d5a6cf, L:/192.168.49.1:60221 - R:/192.168.49.128:8099]
+09:35:32:788  INFO 4276 --- [timeoutChecker_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 381 ms, version:1.5.2,role:TMROLE,channel:[id: 0xc3d5a6cf, L:/192.168.49.1:60221 - R:/192.168.49.128:8099]
+09:35:32:873  INFO 4276 --- [timeoutChecker_2_1] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x67ccc758, L:/192.168.49.1:60241 - R:/192.168.49.128:8099]
+09:35:32:874  INFO 4276 --- [timeoutChecker_2_1] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 85 ms, version:1.5.2,role:RMROLE,channel:[id: 0x67ccc758, L:/192.168.49.1:60241 - R:/192.168.49.128:8099]
+09:35:33:679  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Server healthy check fail, currentConnection = 1708263756631_192.168.49.1_51113
+09:35:33:680  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+09:35:33:770  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Success to connect a server [192.168.49.128:8848], connectionId = 1708306533247_192.168.49.1_60259
+09:35:33:770  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Abandon prev connection, server is 192.168.49.128:8848, connectionId is 1708263757243_192.168.49.1_51135
+09:35:33:770  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1708263757243_192.168.49.1_51135
+09:35:33:772  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Notify disconnected event to listeners
+09:35:33:773  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Notify connected event to listeners.
+09:35:33:948  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Success to connect a server [192.168.49.128:8848], connectionId = 1708306532880_192.168.49.1_60242
+09:35:33:949  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Abandon prev connection, server is 192.168.49.128:8848, connectionId is 1708280439249_192.168.49.1_61836
+09:35:33:949  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1708280439249_192.168.49.1_61836
+09:35:33:954  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Notify disconnected event to listeners
+09:35:33:955  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Notify connected event to listeners.
+09:35:34:054 ERROR 4276 --- [com.alibaba.nacos.client.Worker] com.alibaba.nacos.common.remote.client   : Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=1f37b043501602d103cf334dc51efd3a, Client-RequestTS=1708306533951, exConfigInfo=true, Timestamp=1708306533951}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+09:35:34:496  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Success to connect a server [192.168.49.128:8848], connectionId = 1708306533870_192.168.49.1_60288
+09:35:34:497  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Abandon prev connection, server is 192.168.49.128:8848, connectionId is 1708263756631_192.168.49.1_51113
+09:35:34:497  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1708263756631_192.168.49.1_51113
+09:35:34:500  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+09:35:34:501  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Notify disconnected event to listeners
+09:35:34:502  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Notify connected event to listeners.
+09:35:35:153  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Success to connect a server [192.168.49.128:8848], connectionId = 1708306534749_192.168.49.1_60296
+09:35:35:153  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Abandon prev connection, server is 192.168.49.128:8848, connectionId is 1708306533870_192.168.49.1_60288
+09:35:35:153  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1708306533870_192.168.49.1_60288
+09:35:35:153  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Notify disconnected event to listeners
+09:35:35:153  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Notify connected event to listeners.
+09:35:35:163  WARN 4276 --- [nacos-grpc-client-executor-6486] c.a.n.c.remote.client.grpc.GrpcClient    : [1708306533870_192.168.49.1_60288]Ignore error event,isRunning:true,isAbandon=true
+09:35:35:422  WARN 4276 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h15m3s149ms41µs600ns).
+09:35:35:636  INFO 4276 --- [nacos-grpc-client-executor-6888] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Receive server push request, request = NotifySubscriberRequest, requestId = 156
+09:35:35:638  INFO 4276 --- [nacos-grpc-client-executor-6888] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Ack server push request, request = NotifySubscriberRequest, requestId = 156
+09:35:35:745  INFO 4276 --- [nacos-grpc-client-executor-6889] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Receive server push request, request = NotifySubscriberRequest, requestId = 165
+09:35:35:752  INFO 4276 --- [nacos-grpc-client-executor-6889] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Ack server push request, request = NotifySubscriberRequest, requestId = 165
+09:35:39:808 ERROR 4276 --- [com.alibaba.nacos.client.naming.grpc.redo.0] com.alibaba.nacos.common.remote.client   : Send request fail, request = SubscribeServiceRequest{headers={}, requestId='null'}, retryTimes = 0, errorMessage = java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 63 milliseconds, 151300 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@35af0496[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@44071646, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@7f0ab7df, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@11e49245}}}}}]]
+10:12:04:261 ERROR 4276 --- [com.alibaba.nacos.client.Worker] com.alibaba.nacos.common.remote.client   : Send request fail, request = ConfigBatchListenRequest{headers={}, requestId='null'}, retryTimes = 0, errorMessage = java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 397500 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@1aa55715[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@44071646, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@7f0ab7df, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@11e49245}}}}}]]
+10:12:04:266  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Server healthy check fail, currentConnection = 1708306533247_192.168.49.1_60259
+10:12:04:267  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+10:12:04:557  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel [id: 0x67ccc758, L:/192.168.49.1:60241 - R:/192.168.49.128:8099] read idle.
+10:12:04:557  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x67ccc758, L:/192.168.49.1:60241 - R:/192.168.49.128:8099]
+10:12:04:557  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x67ccc758, L:/192.168.49.1:60241 - R:/192.168.49.128:8099]) will closed
+10:12:04:558  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x67ccc758, L:/192.168.49.1:60241 ! R:/192.168.49.128:8099]) will closed
+10:12:04:558  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x67ccc758, L:/192.168.49.1:60241 ! R:/192.168.49.128:8099]
+10:12:04:558  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x67ccc758, L:/192.168.49.1:60241 ! R:/192.168.49.128:8099]
+10:12:04:558  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x67ccc758, L:/192.168.49.1:60241 ! R:/192.168.49.128:8099]
+10:12:04:558  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x67ccc758, L:/192.168.49.1:60241 ! R:/192.168.49.128:8099]) will closed
+10:12:04:558  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x67ccc758, L:/192.168.49.1:60241 ! R:/192.168.49.128:8099]) will closed
+10:12:04:558  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x67ccc758, L:/192.168.49.1:60241 ! R:/192.168.49.128:8099]
+10:12:04:559  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x67ccc758, L:/192.168.49.1:60241 ! R:/192.168.49.128:8099]
+10:12:04:559  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x67ccc758, L:/192.168.49.1:60241 ! R:/192.168.49.128:8099]
+10:12:04:559  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x67ccc758, L:/192.168.49.1:60241 ! R:/192.168.49.128:8099]) will closed
+10:12:05:047  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x67ccc758, L:/192.168.49.1:60241 ! R:/192.168.49.128:8099]) will closed
+10:12:04:559  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel [id: 0xc3d5a6cf, L:/192.168.49.1:60221 - R:/192.168.49.128:8099] read idle.
+10:12:05:048  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xc3d5a6cf, L:/192.168.49.1:60221 - R:/192.168.49.128:8099]
+10:12:05:048  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xc3d5a6cf, L:/192.168.49.1:60221 - R:/192.168.49.128:8099]) will closed
+10:12:04:560  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+10:12:05:049  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xc3d5a6cf, L:/192.168.49.1:60221 ! R:/192.168.49.128:8099]) will closed
+10:12:05:049  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0xc3d5a6cf, L:/192.168.49.1:60221 ! R:/192.168.49.128:8099]
+10:12:04:560  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Server healthy check fail, currentConnection = 1708306532880_192.168.49.1_60242
+10:12:05:049  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+10:12:05:049  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0xc3d5a6cf, L:/192.168.49.1:60221 ! R:/192.168.49.128:8099]
+10:12:05:050  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xc3d5a6cf, L:/192.168.49.1:60221 ! R:/192.168.49.128:8099]
+10:12:05:053  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xc3d5a6cf, L:/192.168.49.1:60221 ! R:/192.168.49.128:8099]) will closed
+10:12:05:053  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xc3d5a6cf, L:/192.168.49.1:60221 ! R:/192.168.49.128:8099]) will closed
+10:12:05:053  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0xc3d5a6cf, L:/192.168.49.1:60221 ! R:/192.168.49.128:8099]
+10:12:05:053  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0xc3d5a6cf, L:/192.168.49.1:60221 ! R:/192.168.49.128:8099]
+10:12:05:053  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xc3d5a6cf, L:/192.168.49.1:60221 ! R:/192.168.49.128:8099]
+10:12:05:053  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xc3d5a6cf, L:/192.168.49.1:60221 ! R:/192.168.49.128:8099]) will closed
+10:12:05:053  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xc3d5a6cf, L:/192.168.49.1:60221 ! R:/192.168.49.128:8099]) will closed
+10:12:05:054  WARN 4276 --- [nacos-grpc-client-executor-6473] c.a.n.c.remote.client.grpc.GrpcClient    : [1708306532880_192.168.49.1_60242]Ignore error event,isRunning:false,isAbandon=false
+10:12:05:056  WARN 4276 --- [nacos-grpc-client-executor-6487] c.a.n.c.remote.client.grpc.GrpcClient    : [1708306534749_192.168.49.1_60296]Ignore error event,isRunning:false,isAbandon=false
+10:12:06:996  INFO 4276 --- [timeoutChecker_1_1] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.49.128:8099
+10:12:06:996  INFO 4276 --- [timeoutChecker_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.49.128:8099,msg:< RegisterTMRequest{applicationId='vds-websocket-service', transactionServiceGroup='vds'} >
+10:12:07:274 ERROR 4276 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.49.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 875100 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@3096524b[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@44071646, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@7f0ab7df, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@11e49245}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+10:12:08:087 ERROR 4276 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.49.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 34 milliseconds, 42200 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@5443087c[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@44071646, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@7f0ab7df, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@11e49245}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+10:12:08:088 ERROR 4276 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.49.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 30 milliseconds, 386600 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@167813eb[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@44071646, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@7f0ab7df, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@11e49245}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+10:12:09:152  INFO 4276 --- [timeoutChecker_2_1] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.49.128:8099
+10:12:09:152  INFO 4276 --- [timeoutChecker_2_1] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.49.128:3306/vehicle_dispatch
+10:12:09:152  INFO 4276 --- [timeoutChecker_2_1] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.49.128:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.49.128:3306/vehicle_dispatch', applicationId='vds-websocket-service', transactionServiceGroup='vds'} >
+10:12:10:378 ERROR 4276 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.49.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 121100 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@6ff499c6[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@44071646, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@7f0ab7df, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@11e49245}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+10:12:10:380  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Fail to connect server, after trying 1 times, last try server is {serverIp = '192.168.49.128', server main port = 8848}, error = unknown
+10:12:11:106  INFO 4276 --- [timeoutChecker_1_1] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x37b98552, L:/192.168.49.1:60491 - R:/192.168.49.128:8099]
+10:12:11:106  INFO 4276 --- [timeoutChecker_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 4 ms, version:1.5.2,role:TMROLE,channel:[id: 0x37b98552, L:/192.168.49.1:60491 - R:/192.168.49.128:8099]
+10:12:11:260 ERROR 4276 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.49.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 296700 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@81cb2e5[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@44071646, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@7f0ab7df, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@11e49245}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+10:12:11:261  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Fail to connect server, after trying 1 times, last try server is {serverIp = '192.168.49.128', server main port = 8848}, error = unknown
+10:12:11:264 ERROR 4276 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.49.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 2 milliseconds, 13500 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@7b5b162f[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@44071646, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@7f0ab7df, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@11e49245}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+10:12:11:264  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Fail to connect server, after trying 1 times, last try server is {serverIp = '192.168.49.128', server main port = 8848}, error = unknown
+10:12:11:608  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Success to connect a server [192.168.49.128:8848], connectionId = 1708308731470_192.168.49.1_60580
+10:12:11:609  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Abandon prev connection, server is 192.168.49.128:8848, connectionId is 1708306532880_192.168.49.1_60242
+10:12:11:609  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1708306532880_192.168.49.1_60242
+10:12:11:610  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Success to connect a server [192.168.49.128:8848], connectionId = 1708308731470_192.168.49.1_60581
+10:12:11:610  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Abandon prev connection, server is 192.168.49.128:8848, connectionId is 1708306534749_192.168.49.1_60296
+10:12:11:615  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1708306534749_192.168.49.1_60296
+10:12:11:616  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Notify disconnected event to listeners
+10:12:11:617  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Notify connected event to listeners.
+10:12:11:629  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Notify disconnected event to listeners
+10:12:11:645  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Notify connected event to listeners.
+10:12:11:646  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [31ba1f8a-94ee-43fc-9ded-d1133a2545c8_config-0] Server check success, currentServer is 192.168.49.128:8848 
+10:12:11:763  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Success to connect a server [192.168.49.128:8848], connectionId = 1708308731591_192.168.49.1_60538
+10:12:11:764  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Abandon prev connection, server is 192.168.49.128:8848, connectionId is 1708306533247_192.168.49.1_60259
+10:12:11:764  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1708306533247_192.168.49.1_60259
+10:12:11:776  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Notify disconnected event to listeners
+10:12:11:795  INFO 4276 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Notify connected event to listeners.
+10:12:11:849  WARN 4276 --- [nacos-grpc-client-executor-6895] c.a.n.c.remote.client.grpc.GrpcClient    : [1708306533247_192.168.49.1_60259]Ignore error event,isRunning:true,isAbandon=true
+10:12:11:857  INFO 4276 --- [timeoutChecker_2_1] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x1f163eb7, L:/192.168.49.1:60519 - R:/192.168.49.128:8099]
+10:12:11:857  INFO 4276 --- [timeoutChecker_2_1] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 73 ms, version:1.5.2,role:RMROLE,channel:[id: 0x1f163eb7, L:/192.168.49.1:60519 - R:/192.168.49.128:8099]
+10:12:14:014  INFO 4276 --- [nacos-grpc-client-executor-6496] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Receive server push request, request = NotifySubscriberRequest, requestId = 215
+10:12:14:016  INFO 4276 --- [nacos-grpc-client-executor-6496] com.alibaba.nacos.common.remote.client   : [2d109939-c48b-4c9a-9a30-19e260bebd88] Ack server push request, request = NotifySubscriberRequest, requestId = 215
+10:12:14:166  INFO 4276 --- [nacos-grpc-client-executor-6900] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Receive server push request, request = NotifySubscriberRequest, requestId = 218
+10:12:14:172  INFO 4276 --- [nacos-grpc-client-executor-6900] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Ack server push request, request = NotifySubscriberRequest, requestId = 218
+10:12:14:183  INFO 4276 --- [nacos-grpc-client-executor-6901] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Receive server push request, request = NotifySubscriberRequest, requestId = 226
+10:12:14:184  INFO 4276 --- [nacos-grpc-client-executor-6901] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Ack server push request, request = NotifySubscriberRequest, requestId = 226
+10:12:21:879  WARN 4276 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m46s457ms447µs600ns).
+10:12:27:758  INFO 4276 --- [nacos-grpc-client-executor-6904] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Receive server push request, request = NotifySubscriberRequest, requestId = 260
+10:12:27:758  INFO 4276 --- [nacos-grpc-client-executor-6904] com.alibaba.nacos.common.remote.client   : [1e9ec850-9fe0-463f-a6ff-e996a778544f] Ack server push request, request = NotifySubscriberRequest, requestId = 260
+10:13:50:542  WARN 4276 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+10:13:50:543  WARN 4276 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+10:13:50:543  WARN 4276 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+10:13:50:547  WARN 4276 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+10:13:50:571  INFO 4276 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+10:13:50:574  INFO 4276 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+10:13:50:997  INFO 4276 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+10:13:50:997  INFO 4276 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+10:13:51:651  INFO 4276 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+10:13:51:656  INFO 4276 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+10:13:51:962  INFO 4276 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+10:13:51:963  INFO 4276 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@2299d6ec[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+10:13:51:963  INFO 4276 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1708308731591_192.168.49.1_60538
+10:13:51:963  INFO 4276 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@1842ffaa[Running, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 6923]
+10:13:51:978  INFO 4276 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+10:13:52:004  INFO 4276 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+10:13:52:009  INFO 4276 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+10:13:52:009  INFO 4276 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+10:13:52:241  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x37b98552, L:/192.168.49.1:60491 ! R:/192.168.49.128:8099]
+10:13:52:241  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x37b98552, L:/192.168.49.1:60491 ! R:/192.168.49.128:8099]
+10:13:52:241  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x37b98552, L:/192.168.49.1:60491 ! R:/192.168.49.128:8099]
+10:13:52:241  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x37b98552, L:/192.168.49.1:60491 ! R:/192.168.49.128:8099]
+10:13:52:241  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x37b98552, L:/192.168.49.1:60491 ! R:/192.168.49.128:8099]) will closed
+10:13:52:241  INFO 4276 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x37b98552, L:/192.168.49.1:60491 ! R:/192.168.49.128:8099]) will closed
+10:13:52:251  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x1f163eb7, L:/192.168.49.1:60519 ! R:/192.168.49.128:8099]
+10:13:52:251  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x1f163eb7, L:/192.168.49.1:60519 ! R:/192.168.49.128:8099]
+10:13:52:251  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x1f163eb7, L:/192.168.49.1:60519 ! R:/192.168.49.128:8099]
+10:13:52:251  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x1f163eb7, L:/192.168.49.1:60519 ! R:/192.168.49.128:8099]
+10:13:52:251  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x1f163eb7, L:/192.168.49.1:60519 ! R:/192.168.49.128:8099]) will closed
+10:13:52:251  INFO 4276 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x1f163eb7, L:/192.168.49.1:60519 ! R:/192.168.49.128:8099]) will closed

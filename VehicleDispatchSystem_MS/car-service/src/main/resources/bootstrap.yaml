@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: vds-car-service      #微服务名称
+  profiles:
+    #active: local
+    active: dev
+  cloud:
+    nacos:
+      #server-addr: 8.130.27.16:8848
+      server-addr: 192.168.49.128:8848
+      config:
+        file-extension: yaml
+        shared-configs:
+          - dataId: vds-shared-swagger.yaml
+          - dataId: vds-shared-jdbc.yaml
+          - dataId: vds-shared-redis.yaml
+          - dataId: vds-shared-log.yaml
+          - dataId: vds-shared-feign.yaml
+          - dataId: vds-shared-sentinel.yaml
+          - dataId: vds-shared-seata.yaml
+          - dataId: vds-shared-rabbitmq.yaml

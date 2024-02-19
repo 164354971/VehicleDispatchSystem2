@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-swiper": "/node-modules/uview-ui/components/u-swiper/u-swiper",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "u-switch": "/node-modules/uview-ui/components/u-switch/u-switch",
+    "pay-popup": "/components/payPopUp"
+  }
+}

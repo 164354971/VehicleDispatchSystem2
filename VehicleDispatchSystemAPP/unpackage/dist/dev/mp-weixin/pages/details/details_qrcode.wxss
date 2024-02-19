@@ -1,0 +1,39 @@
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; 
+	padding: 100rpx 0;
+}
+.nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; 
+	margin-bottom: 40rpx;
+}
+.canvas{
+	margin-bottom: 40rpx;
+}
+.button{
+	margin-top: 60rpx;
+	width: 300rpx;
+	height: 100rpx;
+	background-color: #ff0000;
+	color: #ffffff;
+	font-size: 40rpx;
+	font-weight: 650;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; 
+	margin-bottom: 40rpx;
+}
+
